@@ -1,0 +1,85 @@
+JavaScript has a number of built-in object types, such as:
+
+Math, Date, Object, Function, Boolean, Symbol, Array, Map, Set, Promise, JSON, etc.
+
+These objects are sometimes referred to as "native objects".
+
+Constructor functions, commonly referred to as just "constructors", are special functions that allow us to build instances of these built-in native objects. All the constructors are capitalized.
+To use a constructor function, It must prepend it with the operator new.
+
+Besides constructor functions for the built-in objects, I can also define custom constructor functions.
+
+Instantiate means to create an instance of a new object in memory.
+**new does 4 things**
+
+1. Creates a blank, plain JavaScript object.
+2. Adds a property to the new object (__proto__) that links to the constructor function's prototype object
+3. Binds the newly created object instance as the this context (i.e. all references to this in the constructor function now refer to the object created in the first step).
+4. Returns "this" if the function doesn't return an object.
+
+ inheritance, encapsulation, abstraction  and polymorphism
+
+ In JavaScript classes, super is used to specify what property gets inherited from the super-class in the sub-class.
+
+An empty object (“empty cabinet”) can be created using one of two syntaxes:
+
+let user = new Object(); // "object constructor" syntax
+let user = {};  // "object literal" syntax 
+
+let user = {     // an object
+  name: "John",  // by key "name" : store value "John"
+  age: 30        // by key "age" : store value 30
+};
+
+*Properties has a key (also known as 'name' or 'identifier'). The values are defined after the 'colon' and can be accessed by either dot or bracket notation. The value can be of any type. 
+*delete keyword is an operator that can be used to remove a property.
+*property names can have multiple words but must be quoted. 
+*Last property value may end with a comma (trailing or hanging comma)
+*Multiword properties does not work with dot notations. The dot requires the key to be a valid variable identifier.(contains no spaces, doesn’t start with a digit and doesn’t include special characters ($ and _ are allowed).
+*We can use square brackets in an object literal, when creating an object. That’s called computed properties.
+
+/* let fruit = prompt("which fruit to buy", "apple?");
+
+let bag = {
+  [fruit]: 5 //name of property is taken from variable above
+};
+
+alert(bag.apple);*/
+
+let fruit = prompt("Which fruit to buy?", "apple");
+let bag = {};
+
+// take property name from the fruit variable
+bag[fruit] = 5;
+
+/*let fruit = 'apple';
+let bag = {
+  [fruit + 'Computers']: 5 // bag.appleComputers = 5
+};*/ 
+
+In real code, we often use existing variables as values for property names.
+
+For instance:
+
+function makeUser(name, age) {
+  return {
+    name: name,
+    age: age,
+    // ...other properties
+  };
+}
+
+let user = makeUser("John", 30);
+alert(user.name); // John
+In the example above, properties have the same names as variables. The use-case of making a property from a variable is so common, that there’s a special property value shorthand to make it shorter.
+
+Property value shorthand. Both normal and shorthand properties can be in the same object. Object property names has no restrictions. Example, 'for', 'let', 'return', etc. There are no limitations  however it will automatically be converted to a string. (eg 0 becomes '0') The only exception is __proto__. We can’t set it to a non-object value:
+
+Instead of name:name we can just write name, like this:
+
+function makeUser(name, age) {
+  return {
+    name, // same as name: name
+    age,  // same as age: age
+    // ...
+  };
