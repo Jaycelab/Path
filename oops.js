@@ -45,3 +45,4 @@ bag[fruit] = 5;
 let bag = {
   [fruit + 'Computers']: 5 // bag.appleComputers = 5
 };*/ 
+
