@@ -1,4 +1,4 @@
-/*const veggies = ['onion', 'garlic', 'potato'];
+const veggies = ['onion', 'garlic', 'potato'];
 	     // current array, option index
 veggies.forEach(function(veggie, index) {
 		console.log(`${index}.${veggie}`)
@@ -126,7 +126,7 @@ const fruits1 = ['apples', ' pears']
 const fruits2 = [...fruits1]
 fruits1.pop();
 console.log(`${[fruits1]} not ${[fruits2]}`)
-*/
+
 
 const meal = ["soup", "steak", "ice cream"];
 // equals to first index of array

@@ -1,4 +1,4 @@
-/*let contact = {
+let contact = {
     tel: "207-662-5412",
     email: "RonaldSMurphy@freepost.org"
 };
@@ -74,4 +74,3 @@ for(i=1; i<=2; i++) {
 
    //more modern way of logging using string intero
     console.log(` ${key}: ${contact[key]}`);
-}

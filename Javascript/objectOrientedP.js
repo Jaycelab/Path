@@ -138,7 +138,6 @@ var cuddles = new Tiger();
 cuddles.makeSound(false); // Roar!
 cuddles.makeSound(true); // purr, Roar!
 
-
 // Task 1: Code a Person class
 class Person {
   constructor(name = "Tom", age = 20, energy = 100) {
