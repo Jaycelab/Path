@@ -63,10 +63,10 @@ class Train {
     getPrototype() {
         var proto = Object.getPrototypeOf(this);
         console.log(proto);
-    console logs the prototype of the object instance of the Train class. The prototype 
-    holds all the properties shared by all the object instances of the Train class. 
-    To get the prototype, you'll be using JavaScript's built-in Object.getPrototypeOf() method, 
-    and passing it this object - meaning, the object instance inside of which this method is invoked. 
+    //console logs the prototype of the object instance of the Train class. The prototype 
+    //holds all the properties shared by all the object instances of the Train class. 
+    //To get the prototype, you'll be using JavaScript's built-in Object.getPrototypeOf() method, 
+    //and passing it this object - meaning, the object instance inside of which this method is invoked. 
     }
 }
 
@@ -207,9 +207,9 @@ class Animal {
         this. energy = energy,
     }
 
-     when ran, will lower value of energy until 0. It will also report
-    updated value of energy. If energy is 0, animal object will go to sleep,
-    by invoking sleep() method based on condition 
+    //when ran, will lower value of energy until 0. It will also report
+    //updated value of energy. If energy is 0, animal object will go to sleep,
+    //by invoking sleep() method based on condition 
     isActive() {
     // if energy is > 0, energy -= 20, console.log energy
     // else if energy <= 0, sleep()

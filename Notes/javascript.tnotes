@@ -1,3 +1,47 @@
+  • Parameters are temporarily variables that is used as a placeholder for a function expression.
+  • Arguments is the value that is inputted when replacing the parameter of a function
+  • Method is when we pass through an object or another function inside a function express 
+  • You can pass in an argument or method while declaring a variable or console logging the input. Example below outputs the same results
+  
+  let myFavorite = triple;
+  console.log(myFavorite(5));
+  
+  let myFavorite = triple(5);
+  console.log(myFavorite);
+  
+  • When declaring a function input with a method, "function" does not have to be called before the function name. 
+  • An object inside an object can be accessed by first calling the object followed as followed:
+  • Object.object.property
+
+  let dog = {
+    name: 'Louie',
+    age: 12,
+    foods: {
+      favorite: 'Pandesal',
+      leastFavorite: 'Vegetables'
+    },
+    color: 'white',
+    breed: 'chihuahua',
+    miss: true,
+    loveYou() {
+      alert('so so much....')
+    }
+  } 
+  
+  console.log(dog.foods.leastFavorite);
+  
+  • The Conditional (Ternary) Operator
+  First, we’ll take a look at the syntax of a typical if statement:
+    if ( condition ) {
+  value if true;
+  } else {
+  value if false;
+  }
+  Now, the ternary operator:
+  condition ? value if true : value if false
+  • 
+
+
 JavaScript has a number of built-in object types, such as:
 
 Math, Date, Object, Function, Boolean, Symbol, Array, Map, Set, Promise, JSON, etc.
@@ -106,3 +150,33 @@ function makeUser(name, age) {
 contact["first name"] = "Tim"; PASSED (bracket notation)
 contact.first name = "Tim"; // FAILED (dot notation)
 contact."first name" = "Tim";  FAILED (dot notation)
+
+Default parameters is a way to build a function without passing in any arguments. Without a default parameter, a function with now throw an error code, however it would return back a NaN result (non-sensible output)
+
+    (OOP Demo Chart)
+      Animal
+  Cat         Bird
+HouseCat     Tiger      Parot
+
+
+There are two keywords that are essential in OOP. These are 'extends' and 'super'. 
+
+Extends keyword allows to inheritance from an exisiting class 
+Super keyword allows  to "borrow" fucntionality from a super class, in a sub class.
+
+Animal class = constructor (color & energy)
+Animal class prototype = 3 methods isActive(), sleep(), getColor()
+
+*The isActive() method, whenever ran, will lower the value of energy until it hits 0. The isActive() method will also report the updated value of energy. If energy is at zero, the animal object will immediately go to sleep, by invoking the sleep() method based on the said condition. 
+
+*The Cat class will inherit from Animal, with the additional sound, canJumpHigh, and canClimbTrees properties specific to the Cat class. It will also have its own makeSound() method. 
+
+*The Bird class will also inherit from Animal, but is own specific properties will be quite different from Cat. Namely, the Bird class will have the sound and the canFly properties, and the makeSound method too. 
+
+*The HouseCat class will extend the Cat class, and it will have its own houseCatSound as its special property. Additionally, it will override the makeSound() method from the Cat class, but it will do so in an interesting way. If the makeSound() method, on invocation, receives a single option argument - set to true, then it will run super.makeSound() - in other words, run the code from the parent class (Cat) with the addition of running the console.log(this.houseCatSound). Effectively, this means that the makeSound() method on the HouseCat class' instance object will have two separate behaviors, based on whether we pass it true or false. 
+
+*The Tiger class will also inherit from Cat, and it will come with its own tigerSound property, while the rest of the behavior will be pretty much the same as in the HouseCat class. 
+
+*. Finally, the Parrot class will extend the Bird class, with its own canTalk property, and its own makeSound() method, working with two conditionals: one that checks if the value of true was passed to makeSound during invocation, and another that checks the value stored inside this.canTalk property.  
+
+Note: If I didn't use the super keyword in our sub-classes, once I'd run the above code, I'd get the following error: Uncaught ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor.

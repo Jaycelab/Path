@@ -1,0 +1,30 @@
+Week 1 Summary:
+Javascript
+1. Introduction to OOP including classes, constructor, prototypes, super, this and the 4 principles of OOP.
+2. Methods and arrow functions
+3. for in and for out loops
+4. Object methods including keys, values, entries, __prototype__
+5. Browser engines, interpreters and compliers 
+6. Maps, sets, rest operators 
+
+AWS 
+1. IAM policy and creating authorized users with key pairs as root
+2. EC2, storage and instance types, layouts
+3. Introduced SSH login via linux terminal
+
+Blockchain
+1. Introduction to solidity, next.js, react.js, tailwind and yarn
+2. Metamask connection via web
+
+Command Line
+1. Adding files to commit and pushing to Github via git repository with notes
+2. Powershell and WSL with linux  
+3. Installing and updating with node npm
+4. Ubuntu and redhat intro commands using app, sudo, yum
+
+IDE
+1. Configured node.js with Sublime and customization through JSON settings
+
+Portfolio
+1. Introduction to Heroku & Netlify cloud
+2. Introudction to Rasberry PI as personal server
