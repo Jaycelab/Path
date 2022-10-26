@@ -1,0 +1,29 @@
+HTML and Web:
+
+- web is a collection of documents made up of html, videos, images
+- hypertext - a form of text in which documents can refer(link) to ther documents and resources
+- html stands for HyperText Markup Language
+- browsers gets web pages by communicating with servers 
+- servers are computers that have programs running which answers a browsers requests 
+- requests are sent by name (ex: index.html) to the web server and sends backs a response containing that document. If not name is found, sends back an error message (ex 404: Page Not Found)
+- the rules of these steps are called HTTP (Hyper Text Transfer Protocol). HTTP(s) use encryption to kep data secure (s)
+
+Syntax: Grammar rules of a computer language (similar to any other spoken language, ex. English)
+Formalism: Computers take code literally and will only do exactly what you tell it to do
+Nesting: Bits of code going inside other bits of code in an ordely way. 
+
+- text files contain letters, numbers, spaces, punctuation. They do not contain color, images or videos. Similar to anything you can write on an old typewrite. HTML is written strictly in text. The layout of a webpage, as seen by the user, is put together by the web browser based on the code in the text file.
+- markup is text that the browser should look for or how it's arranged. Within a markup, there can be references to include other documents and files like images and videos. 
+- markup is text that has a special meaning. Every element starts and ends with a <tag>. The first tag is called an opening tag and the ending tag with a slash (/) is called a closing a tag. The brackets are usually referred is as an "angle bracket"
+- element is a group of tags, however it may also be confused as a single tag 
+- spaces, tabs, and lines breaks are called <strong>whitespace</strong>
+- white spaces written in an IDE will not be displayed on the web browser 
+- whitespace includes spaces, tabs, and line breaks.  When the browser displays an HTML file, it treats a run of whitespace as a single space character. In order to create a line break that will show up in the browser, use the <br> tag.
+- <br> does not need a closing tag (self-closing tag). It has no contents. These elements are referred to as void or empty element. <img> is also considered an empty element
+- <sub> and <sup> stand for "subscript" and "superscript". Originally, HTML started out as a tool for scientific and academic work; and these are really useful for science and math, like writing x2+3x+4 = 1 or chemical formulas like H2O.
+- nesting elements can go inside other elements, but have certain rules. Example: small elements can go inside top level elements. Two p elements cannot be used, two script elements with different tags cannot be used
+- <h1> is used for the main heading on a page, while the rest are used for subheadings. There are a total of 6 heading levels. Smaller headings are used to show that one section is inside another
+Example: 
+- Difference between <br> and <p> is br just tells the browser to end the line. P tells the browsers to create an invisible box (block) around the surronding text that has a height, width and margin. P is considered a block element. BR is considered an inline element
+- Few more examples of block elements include <ol>, <h1>, <video>, <div> <table>. 
+- Few examples of inline include <br>, <em>, <strong>, <mark>, <a>, <img>, <span>
