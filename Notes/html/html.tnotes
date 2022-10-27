@@ -27,3 +27,5 @@ Example:
 - Difference between <br> and <p> is br just tells the browser to end the line. P tells the browsers to create an invisible box (block) around the surronding text that has a height, width and margin. P is considered a block element. BR is considered an inline element
 - Few more examples of block elements include <ol>, <h1>, <video>, <div> <table>. 
 - Few examples of inline include <br>, <em>, <strong>, <mark>, <a>, <img>, <span>
+- <div> stands for <division>. This element is used to divide up the pages into different sections. It also has an invisible box around it, similar to the <p> element. One main difference is that a <p> element is specfically meant to contain texts. In contract, the <div> element is a generic container for any other elements to be put inside to organize contents and divide the pages in sections
+- <p> tag is another example of an element in which a closing tag is optional. However leaving off a closing <p> tag is still implied --meaning the browser will figure out where the element should be closed 
