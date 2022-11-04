@@ -12,17 +12,20 @@
 
 #DOM# 
 - HTML
-	BODY
-	  HEADER
-	    NAV
+   HEAD (title)
+	 BODY (intro)
+
+	  HEADER (logo)
+	    NAV (list and list items)
 	      SECTION
 	        UL
 	          LI LI LI
-	            INTRO	
-	              MAIN
-	                H1 H2 H3
-	                  P  P  P
-	                    FOOTER          
+
+	            INTRO 
+	              MAIN (post intro)
+	                H1 H2 H3 (post title)
+	                  P  P  P (post body)
+	                    FOOTER (social, copyright, emails, etc)
 
 
 
