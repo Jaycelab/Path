@@ -1,0 +1,48 @@
+- Tip: Add flex-direction: column on main viewpoint. Set a @media query of min-width: 600-750px to flex-direction:row. This will add a responsive design without needing to add additional spacing once the window becomes smaller. 
+- VW is the 'view window'. Equivilent to the actual users window browser window. Commonly used on "height" properties
+= Add "GAP" property to add in margins between rows 
+- Flexbox axis is determined by the flex-direction property. Default is "row" and can be adjusted to "column" property. 
+- Justify content with be the main content of the flex-direction. It will only work if there are empty spaces. "Center" takes the content and centers within the parent container. "Flex-start" and "flex-end" will either begin from the left or right of the container. "Space-between" will look for extra space of the contrainer and distribute it between the elements. "Space-around" is not commonly used as it distributes even spaces but not at the first and last element (maybe useful in some use cases) "Space-evenly" is a more useful property
+- "Align-items" for flexbox is default to stretch. This referes to the text inside the elements.
+- *Article* and *Section* elements should cointain a *Header* element that includes a *Paragraph* element.
+- *Main* element should include the contents of the post
+- You can add a section element to semantically define individual sections of the article. Headers should always be used to semantically describe the section
+- Having more than one section elements is common in a web page and doesn't require an article element
+
+
+#DOM# 
+- HTML
+	BODY
+	  HEADER
+	    NAV
+	      SECTION
+	        UL
+	          LI LI LI
+	            INTRO	
+	              MAIN
+	                H1 H2 H3
+	                  P  P  P
+	                    FOOTER          
+
+
+
+Responsive Portfolio Tips:
+
+-SECTIONS-
+- 1st Section for the root(hero), Logo, nav list, scroller and heading.
+- 2nd Section for the body which includes intro,  profil photo
+- 3rd section for projects 
+= Footer for any contact and email info
+
+-FLEXBOX-
+- Container 1 to wrap *nav* element as main flexbox container (outer container)
+- Container 2 to wrap inside elements as secondary container (inner element) 
+- Inside elements includ *ul* *li* *buttons* *headings*
+
+-HEADINGS-
+- H1 for Intro
+- H2 for Body Title 
+- H3 for Sub body
+- P for additional body (paragraphs)
+
+
