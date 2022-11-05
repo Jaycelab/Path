@@ -2,21 +2,21 @@ Elastic load balancing (ELB)
 Service that distributes incoming internet traffic to multiple EC2 instances in 
 case of stoppage or overload
 
-EC2 layout - Sec group, subnet, VPC, Region
+EC2 layout - Sec group, sub net, VPC, Region
 
-Spot Intances - Able to withstand interuptions
+Spot Instances - Able to withstand interruptions
 
 AMI, Instance type , Storage config affects EC2 Pricing. Key pair, sec group and IAM role does not affect
 
-AWS Security group can be modified anytime and is used as a firewall to protect against incomming and outgoing EC2 traffic. The changes applied when updating a sec group is immediately 
+AWS Security group can be modified anytime and is used as a firewall to protect against incoming and outgoing EC2 traffic. The changes applied when updating a sec group is immediately 
 
-EC2 auto scaling only applies to horizontal scaling. Meaning that it will apply recommended appls to reduce overload to the CPU. Example, is applying multiple EC2 instances when a single EC2 is overloaded. Vertical scaling is not automated, as this is increasing or decreasing the core components of an EC2 instance (physcal hardware eg. hd, cpu, ram )
+EC2 auto scaling only applies to horizontal scaling. Meaning that it will apply recommended apps to reduce overload to the CPU. Example, is applying multiple EC2 instances when a single EC2 is overloaded. Vertical scaling is not automated, as this is increasing or decreasing the core components of an EC2 instance (physical hardware eg. hd, cpu, ram )
 
-When using EC2 auto scaling, on demand instances are the best opotions. Saving plans and reserved are for long term use. Spot instances are not a good choice because spot is recommended for cases in which interuptions can be endured
+When using EC2 auto scaling, on demand instances are the best options. Saving plans and reserved are for long term use. Spot instances are not a good choice because spot is recommended for cases in which interruptions can be endured
 
-The main components of an instance type are the CPU, memory and network performance. The operating system and application software are part of the AMI. The public IP address is part of the network setttings. 
+The main components of an instance type are the CPU, memory and network performance. The operating system and application software are part of the AMI. The public IP address is part of the network settings. 
 
-Amazon EBs is persistent storage. It can be retained after the instance is terminated. Instance store volumes are ephermeral. They can only be rebooted and still retain data. 
+Amazon EBs is persistent storage. It can be retained after the instance is terminated. Instance store volumes are ephemeral. They can only be rebooted and still retain data. 
 
 EC2 instance store volume cannot be encrypted. If they are stopped or terminated, user data will be lost. Instance volume can also be used as a root volume and will retain volume when rebooted. 
 
@@ -25,4 +25,4 @@ AWS marketplace is for software listings that can configure the AMI
 Assign users to groups and assign permissions to groups
 Create Roles for giving permissions to AWS services. 
 Use access keys for programmatic access (CLI/SDK)
-Avoid root account - only for creating seperate accounts 
+Avoid root account - only for creating separate accounts 

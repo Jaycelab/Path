@@ -1,17 +1,17 @@
 Javascript Object Notation:
 - JSON is basically just an object represented in the form of a string
 - to work with JSON, it is common to convert it back to a JS object to work with it's properties and methods
-- lightweight, with syntax similar to a stringified Javascript order
-- easier to handle in Javascript code, since JSON is after all, JS
-- often said that JSON is a subset of Javascript which adhers to sytax rules of the Javascript language but is more strict with formatting.
+- lightweight, with syntax similar to a stringified JavaScript order
+- easier to handle in JavaScript code, since JSON is after all, JS
+- often said that JSON is a subset of JavaScript which adheres to syntax rules of the JavaScript language but is more strict with formatting.
 - JSON is a file format and common to access third-party data from third-party websites.
 - able to pull and access data from different vendors, in which they would provide a .json file
-- once downloaded, the .json file can then be convereted into a plain JS object
-- Steps include getting a stringified JSON data from a server and converting (or "pasring") that data into JS objects in your own code. Once converted, the data can also be stringified back into JSON to be sent back to the server after processing the code locally.  JSON is a string, but it mut also be properlly formated with certain rules or Javascript would not be able to parse into an object. JSON can work with some primitives and some complex data types however only a subset of values in JavaScript can be properly stringified to JSON and parsed from a JavaScript object into a JSON string.
+- once downloaded, the .json file can then be converted into a plain JS object
+- Steps include getting a stringified JSON data from a server and converting (or "parsing") that data into JS objects in your own code. Once converted, the data can also be stringified back into JSON to be sent back to the server after processing the code locally.  JSON is a string, but it must also be properly formatted with certain rules or JavaScript would not be able to parse into an object. JSON can work with some primitives and some complex data types however only a subset of values in JavaScript can be properly stringified to JSON and parsed from a JavaScript object into a JSON string.
 
 These values include:
 
-primitive values: strings, numbers, bolleans, null
+primitive values: strings, numbers, boolean, null
 
 complex values: objects and arrays (no functions)
 
@@ -76,7 +76,7 @@ JSON.parse(jsonStr)
 
 // storing JSON string into a JS object and variable
 const aPlainObj = JSON.parse(jsonStr)
-//reassinging object value of .greeting to 'hey' 
+//reassigning object value of .greeting to 'hey' 
 aPlainObj.greeting = 'hey'
 aPlainObj;
 

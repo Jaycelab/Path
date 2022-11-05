@@ -10,7 +10,7 @@ const target - document.querySelector('body')
 function handleClick() {
 		console.log('clicked the body');
 	}
-// passing two param, event type 'click' + function
+// passing two parameters, event type 'click' + function
 target.addEventListener('click', handleClick)
 
 function handleClick2() { 
@@ -18,12 +18,12 @@ console.log('Clock the heading')
 }
 
 
-//caputuring user input 
+//capturing user input 
 let answer = prompt('What is your name'):
 
 //once user provided input to variable (answer)
 if (typeof(answer) === 'string') {
-//assigns infomration to <h1> element
+//assigns information to <h1> element
 	let h1 = document.createElement('h1') 
 		h1.innerTest = answer;
 		document.body.innerText = ""; 
@@ -63,7 +63,7 @@ input.addEventListener('change', function(){
 h1.innerText = input.value
 });
 
-//Excercise: Capture Data
+//Exercise: Capture Data
 let h1 = document.querySelector('h1')
 
 let arr =[

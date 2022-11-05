@@ -38,23 +38,24 @@ console.log(dog)
 
 // extending class, first letter capital
 class Train { 
-// code defined in between the curly braces is the consturctor. Used to build properties on 
+// code defined in between the curly braces is the constructor. Used to build properties on 
 // future object instances.  
   constructor(color, lightsON) { 
 // This represents the future object instance of the Train class
       this.color = color;
       this.lightsON = lightsON;
   }
-    toggleLights() {  This operator will change the value stored in the 
-      lightsOn property of the future instance object of the Train class
+    toggleLights() {  
+      // This operator will change the value stored in the 
+      // lightsOn property of the future instance object of the Train class
         this.lightsOn = !this.lightsOn;
-       the = operator to its left means that it will get assigned to this.lightsOn, 
-      meaning that it will become the new value of the lightsOn property on that given instance object.
+      //  the = operator to its left means that it will get assigned to this.lightsOn, 
+      // meaning that it will become the new value of the lightsOn property on that given instance object.
     }
     lightsStatus() {
         console.log('Lights on?', this.lightsOn);
-    The lightsStatus() method on the Train class just reports the current 
-    status of the lightsOn variable of a given object instance.
+    // The lightsStatus() method on the Train class just reports the current 
+    // status of the lightsOn variable of a given object instance.
     }
     getSelf() {
         console.log(this);
@@ -84,7 +85,7 @@ myForthTrain.getPrototype();
 class HighspeedTrain extends Train {
   constructor (passengers, highSpeedOn, color, lightsOn) {
           super(color, lightsOn);
-          this.passengers = passengers; //assin this on subsequent lines.
+          this.passengers = passengers; //assign this on subsequent lines.
           this.highSpeedOn = highSpeedOn; // automatically inherit all methods on Train prototype
             // incl. togglelights, lightStatus, getSelf and getPrototype methods
   }
@@ -269,6 +270,6 @@ class Parrot extends Bird {
 
     makeSound() {
         //2 conditionals. Check if "true" was passed to super.makeSound during invocation
-        // Checks value stored inside this.canTalk propery, Logs 'talking '
+        // Checks value stored inside this.canTalk property, Logs 'talking '
     }
 }

@@ -74,7 +74,7 @@ value "John" age: 30        // by key "age" : store value 30 };
 *delete keyword is an operator that can be used to remove a property.
 *property names can have multiple words but must be quoted. 
 *Last property value may end with a comma (trailing or hanging comma)
-*Multiword properties does not work with dot notations. The dot requires the
+*Multi word properties does not work with dot notations. The dot requires the
  key to be a valid variable identifier.(contains no spaces, doesn’t start
  with a digit and doesn’t include special characters ($ and _ are allowed).
 *We can use square brackets in an object literal, when creating an object.
@@ -120,12 +120,12 @@ same as age: age
     // ...
   };
 
-   literal notation (initiliazer notation) = common declaration using curly
+   literal notation (initialize notation) = common declaration using curly
    brackets
 
- Key value pair is a property name , seperated by a colon , and then a value.
+ Key value pair is a property name , separated by a colon , and then a value.
  The property can be enclosed in quotation marks but not necessary as
- Javascript interprets it as a string. This will not apply to multi worded
+ JavaScript interprets it as a string. This will not apply to multi worded
  key names , in which quotes are needed .This practice should be avoided
  however and should be written as camelCase. Console.log() is also an example
  of a "dot notation" The console is an object and the 'log' is it's property.

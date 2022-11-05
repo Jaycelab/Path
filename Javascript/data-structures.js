@@ -21,12 +21,12 @@ const result = []; const drone = { speed: 100, color: 'yellow' } const
 droneKeys = Object.keys(drone);
 //first parameter is the current array, 2nd para (optional) is the index
 //result = Key parameter > object keys as a method to droneKeys variable.
-//method is evaulting the result, used as a 2nd parameter. pushing the index
+//method is evaluating the result, used as a 2nd parameter. pushing the index
 //of drone to the array
 droneKeys.forEach( function(key) { result.push(key, drone[key]) }) console.log
 (result)
 
-let smallDogs = new Map(); smallDogs.set('A ', 'Chihuhaha'); smallDogs.set
+let smallDogs = new Map(); smallDogs.set('A ', 'Chihuahua'); smallDogs.set
 ('B ', 'Pomeranian'); smallDogs.set('C ', 'Corgi');
 //logging specific value, passing key name as parameter
 console.log(smallDogs.get('C '));
@@ -42,8 +42,8 @@ const topColors =
 
 
 const [first, second, third, ...secondSet] = topColors;
-// first variable assigns to 0 index (red). secondSet variabile assigns
-// remaining indicies in arry. 
+// first variable assigns to 0 index (red). secondSet variable assigns
+// remaining indices in array. 
 console.log(secondSet); console.log(second)
 
 
@@ -56,10 +56,10 @@ function addTaxToPrices(taxRate, ...itemsBought) {
 	return itemsBought.map(item => taxRate * item) }
 
 // parameters added as values to function addTaxToPrices using rest ... items
-// bought parameter equal to index evaulted inside function with return map.
-// 2nd function item (equal to current array) evaulates tax rate with item 
+// bought parameter equal to index evaluated inside function with return map.
+// 2nd function item (equal to current array) evaluates tax rate with item 
 
-//rest parameter must be last parameter in fuction definition 0 element
+//rest parameter must be last parameter in function definition 0 element
 //(1.1) assigned to taxRate parameter, remaining to itemsBought parameter
 let shoppingCart = addTaxToPrices( 1.1, 46, 89, 35, 79); console.log
 (shoppingCart) 
@@ -75,7 +75,7 @@ const flying = { wings: 2 }; const car = { wheels: 4 };
 // concatenates flying + car objects
 const flyingCar = { ...flying, ...car }; console.log(flyingCar);
 
-let veggies = ["onion", "parsley", "brocolli"];
+let veggies = ["onion", "parsley", "broccoli"];
 //adds (push) new elements to array
 veggies = [...veggies, "carrot", "beetroot"]; console.log(veggies);
 
@@ -84,7 +84,7 @@ const greeting = "Hello";
 const arrayOfChars = [...greeting]; console.log(arrayOfChars);
 
 const car1 = { speed: 200, color: "yellow", };
-//copies object to object properties. able to assin new properties to
+//copies object to object properties. able to assign new properties to
 //original
 const car2 = { ...car1, test: true }; car1.speed = 201; console.log
 (car2.test, car1.speed);

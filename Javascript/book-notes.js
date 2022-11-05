@@ -41,7 +41,7 @@ fn: function(arg) {console.log(arg)}
 };
 
 test.fn(123); 
-//object prototype, superclass 
+//object prototype, super class 
 
 let point = {
     x: 0,
@@ -51,26 +51,26 @@ let point = {
 moveHorizontally: function (distance) {
     //referring 'this' to parent object 
     this.x = this.x + distance;
-}, //comma for better reading (seperate multiple propteries /methods )
+}, //comma for better reading (separate multiple properties /methods )
 
 moveVertically: function (distance) {
     this.y = this.y + distance;
 }
 }
 
-console.timeLog(point.x); */
+console.timeLog(point.x);
 
 let contact = {
     email_1: "RonaldSMurphy@freepost.org",
     email_2: "rsmurphy@briazz.com"
 };
 for(i=1; i<=2; i++) {
-    //loops email_ to add i, in which it will convert to a string. This eval
+    //loops email_ to add i, in which it will convert to a string. This evaluates
     // to the variables above. It will loop twice and convert i to email_1 
     // and email_2
     let key = "email_" + i;
     //console.log(key);
     //console.log(contact[key]);
 
-   //more modern way of logging using string intero
+   //more modern way of logging using string iteration 
     console.log(` ${key}: ${contact[key]}`);
