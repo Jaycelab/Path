@@ -142,11 +142,11 @@ same as age: age
  objects describe their characteristics, methods can be treated as their
  characteristic behavior, or ways of changing the state of an object.
 
- Assigining an object with an empty new property returns an undefined typeof,
+ Assigning an object with an empty new property returns an undefined typeof,
  rather than a not or null. This is also true when initiating a variable to
  an empty object.
 
- Bracket notations [] is useful for calculating expressions and also for multi
+ Bracket notations [ ] is useful for calculating expressions and also for multi
  worded keys. Example below:
 
  let contact = {
@@ -164,8 +164,8 @@ code, however it would return back a NaN result (non-sensible output)
 There are two keywords that are essential in OOP. These are 'extends'
 and 'super'. 
 
-Extends keyword allows to inheritance from an exisiting class Super keyword
-allows  to "borrow" fucntionality from a super class, in a sub class.
+Extends keyword allows to inheritance from an existing class Super keyword
+allows  to "borrow" functionality from a super class, in a sub class.
 
 Animal class = constructor (color & energy) Animal class prototype = 3 methods
 isActive(), sleep(), getColor()
@@ -206,4 +206,5 @@ isActive(), sleep(), getColor()
 Note: If I didn't use the super keyword in our sub-classes, once I'd run the
 above code, I'd get the following error: Uncaught ReferenceError: Must call
 super constructor in derived class before accessing 'this' or returning from
-derived constructor.
+derived constructor. 
+
