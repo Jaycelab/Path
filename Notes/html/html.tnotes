@@ -40,3 +40,76 @@ Href = hypertext reference
 HTML and Web:
 Nesting: Bits of code going inside other bits of code in an orderly way. 
 Syntax: Grammar rules of a computer language (similar to any other spoken language, ex. English)
+
+-HEADINGS-
+- H1 for Intro
+- H2 for Body Title 
+- H3 for Sub body
+- P for additional body (paragraphs)
+
+
+- OGP
+
+Open Graph Protocol - A set of metadata rules that allows web pages to describe themselves to social media networks. Developers use OGP to improve the use experience of shared linked as the social media platforms uses these shared links to create a preview of the shared web page 
+
+The meta tag is also placed in between the head element however a difference is that it uses a PROPERTY attribute instead of a name attribute. It's property often begins with "og:sometext" as OG is used to reference Open Graph related tag
+
+The Open Graph Protocol must always include the following 4 property types:
+title - title of page
+type- type of content (website, music, article or video) 
+url - permanent web address 
+image - image that must be used when shared
+
+In combination of the above types, social media platforms are able to create a sharable website link along with the following below
+
+Description - the description of the web page
+Locale- Language and location . (example en_US)
+Site_name - overall website that it belongs to
+
+OG:Type may often include the Site_Name to better help provide potential customers the name of the business
+
+Social media cards using OGP requires a type, image and title. It does not require description as it is only optional
+
+- Viewport can impact Search Engine rankings
+
+- Multiple headers are possible. However, we cannot nest headers, or add a header in a footer.
+
+- To define a page refresh for a website, the attribute values of http-equiv and content must be included 
+
+<Form valadition>
+
+- Form validation ensures that data is valid and conforms to defined rules
+There are 2 types of validation : 
+*Client and Service side*
+
+- Client-side validation checks for errors as soon as they are typed into the form, often done by the web browser or Javascript code. The feedback response is immediate. Client-side checks to see if the form has been filled out correctly and submitted to the server for processing if no errors are found. If invalid (errors found) an error message will alert the user of the invalid data. example: not entering a valid email or entering a letter on a number type input
+
+- Server side validation checks for errors after it has been submitted to the web server. This is more secure as it prevents user from tampering with the websites code and submitting invalid requests to your server. When the data is submitted, the back end will validate the data before processing it. This process goes through a more complex validation as it can validate the data against databases or business requirements, etc 
+
+- Most websites use both client and server side validations to provide immediate feedback to users and added security
+
+- A few examples of inputs include: <input type="">
+email
+tel
+url
+data
+time
+number
+range
+color
+
+- Common to use individual div elements per each input label/value
+
+- FORM method POST is common for HTTPS
+
+- Add "required" along with additional properties inside input elements to require min-length, input etc.
+
+*Radiobutton*
+- Fieldset elements is used to group radio buttons. Without it, all radio buttons will belong to the same group.
+- Button elements goes below the field set
+- Inputs elements goes between the field set. Each input represents a button (choice)
+- The input name should also match the field id. This tells the browser which input the field set belongs to
+- Use "checked" attribute to set a default location
+- To be able to select an option without having to select the radio, you can wrap the inputs in it's own label.
+- Use datalist input to add a form which users can pick from a long list
+- Calander can use input "date", "week" and "month"
