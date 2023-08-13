@@ -2,7 +2,7 @@
 - VW is the 'view window'. Equivalent to the actual users window browser window. Commonly used on "height" properties
 = Add "GAP" property to add in margins between rows 
 - Flexbox axis is determined by the flex-direction property. Default is "row" and can be adjusted to "column" property. 
-- Justify content with be the main content of the flex-direction. It will only work if there are empty spaces. "Center" takes the content and centers within the parent container. "Flex-start" and "flex-end" will either begin from the left or right of the container. "Space-between" will look for extra space of the contrainer and distribute it between the elements. "Space-around" is not commonly used as it distributes even spaces but not at the first and last element (maybe useful in some use cases) "Space-evenly" is a more useful property
+- Justify content with be the main content of the flex-direction. It will only work if there are empty spaces. "Center" takes the content and centers within the parent container. "Flex-start" and "flex-end" will either begin from the left or right of the container. "Space-between" will look for extra space of the container and distribute it between the elements. "Space-around" is not commonly used as it distributes even spaces but not at the first and last element (maybe useful in some use cases) "Space-evenly" is a more useful property
 - "Align-items" for flex box is default to stretch. This references to the text inside the elements.
 - *Article* and *Section* elements should contain a *Header* element that includes a *Paragraph* element.
 - *Main* element should include the contents of the post
@@ -48,9 +48,9 @@ Responsive Portfolio Tips:
 
 - Flex-flow is shorthand property for defining the direction of the flex container and it's behavior for wrapping
 
-- Justify content is primarely used for rows and align-self for columns.
+- Justify content is primarily used for rows and align-self for columns.
 - Justify aligns the flexible content on the main axis
-- Common measurements for abosolute units is pixels (px) and centimeters (cm)
+- Common measurements for absolute units is pixels (px) and centimeters (cm)
 - Common measurements for realative values is percentage, em, vh, vw, and rem.
 #FLEXBOX IS SINGLE DIMENSIONAL# 
 - Row has a horizontal main axis and vertical cross axis. When column, the values are opposite
@@ -80,7 +80,7 @@ column-gap: normal
 row-gap: normal
 
 #Fr is a fractional unit and 1fr is for 1 part of the available space#
-(This works in conjuction with pixles, percentages, etc)
+(This works in conjunction with pixels, percentages, etc)
 
 Grid properties for container:
 grid-template-columns: measurement units | % units |repeat()
@@ -167,7 +167,7 @@ justify-content: flex-start | flex-end | center | space-between | space-evenly |
 
 Properties for flexbox items (child):
 
-- Shorthand propetry for grow, shrink and basis
+- Shorthand property for grow, shrink and basis
 flex:
 
 flex-grow: factor of flex’s main size    /* E.g. 1 */
@@ -182,3 +182,4 @@ align-self:  start | center | end | stretch
 
 - repeat (num, fr) is used to write a short hand grid-template row/columns for grid display
 - grid-column: (1/ span 12) *this means that it was begin on the first column and span out twlce columns*
+

@@ -60,7 +60,7 @@ an object.
  In JavaScript classes, super is used to specify what property gets inherited
  from the super-class in the sub-class.
 
-An empty object (“empty cabinet”) can be created using one of two syntaxes:
+An empty object (“empty cabinet”) can be created using one of two syntax's:
 
 let user = new Object(); // "object constructor" syntax let user =
 {};  // "object literal" syntax 
@@ -158,7 +158,7 @@ Default parameters is a way to build a function without passing in any
 arguments. Without a default parameter, a function with now throw an error
 code, however it would return back a NaN result (non-sensible output)
 
-    (OOP Demo Chart) Animal Cat         Bird HouseCat     Tiger      Parot
+    (OOP Demo Chart) Animal Cat         Bird HouseCat     Tiger      Parrot
 
 
 There are two keywords that are essential in OOP. These are 'extends'
