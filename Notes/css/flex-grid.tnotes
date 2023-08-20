@@ -94,3 +94,35 @@ Grid-template-areas:  Specifically assign the number of rows and columns using a
 
 ‘hd hd hd hd hd hd hd hd hd ‘
 ‘mn mn  mn mn mn mn sb sb’
+
+grid-template-column(or row): repeat is the same as typing in 1fr, 1fr, 1fr 1fr. Instead you can type repeat(4) 1r. FR(fr) is commonly used in Grid as opposed to px rem and % as you don't need to guess to evenly space out each column or row.
+It is commonly combined with a min max() to set a minimum and maximum width/height.
+Auto-fill will fill a container as long as the size is set and there is space within the container 
+
+repeat (auto-fill) will automatically fill up each element for a responsive design and will create a column if there is additional space
+repeat (auto-fit) will automatically fill a container but will NOT create any additional spaces if available within a container.
+
+With grid-template-column/row we are also able to individually assign names to each element by surround the values inside a []. Example below with 3 columns and 2 rows
+grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1 fr;
+grid-template-rows: 100px 50px;
+
+Any subsequent columnns or rows will a default value. However you can use the following below to set a defauly for any subsquent elements that you add in the future by using the properties below:
+grid-auto-columns: ;
+grid-auto-rows: ;
+
+Whenever any new elements are added, you can use the following below to automatically create a new row or column
+grid-auto-flow: ;
+
+grid-column: 10/11 means that you are selecting a fixed location value by assigning a start of column 10 and ending in column 11. This also applies to grid-row
+
+**Note: Adding an element after the selected grid-column element will fill in the empty spaces that are not assigned, rather thann place the elements after. This is possible with 
+grid-auto-flow: dense;  You can also use row-dense or column-dense
+
+grid-column-gap and grid-row-gap can be shorted by 
+grid-gap: row column . You can also enter 1 value to assign both columns and rows;
+
+Align-items: Positions items vertically within a grid cell. It defaults at stretch
+
+Justify-items: Positions items horizontally (x-axis) within a cell. Default is also set to streth
+
+place-items : is the shortened version for align and justify items with the order being center followed by stretch. You can also assign a single value to assign both properties. 
