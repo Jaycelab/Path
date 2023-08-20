@@ -1,0 +1,96 @@
+
+CSS Grid overall layout  of the page
+CSS Flex box inner elements
+
+Flex container is the element that holds the flex items . Flex items are direct children of flex containers. A container is created with display: flex;
+**For example , if a div with a container class has a display:flex, all the divs , paragraphs and images below will also be affected by the flex container
+
+Flex container Properties:
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items 
+align-content
+
+Flex Item properties:
+order
+flex-grow
+flex-shrink
+flex-basis
+align-self
+
+Main Axis – flex-direction:row ;
+Horizontal (left to right)
+
+Cross Axis – flex-direction: row;
+Vertical (up and down)
+
+Main Axis – flex-direction: column:
+Vertical (Up to down)
+
+Cross Axis – flex-direction: column:
+Vertical (Up to down, from Y axis)
+
+Prior to flex box, we previously had to create a float property in CSS that would display items in a row, however new contents would also be added on the same row. This would be fixed by adding an “after” property in CSS along with an empty content, a display block and clear: block;
+
+Justify-content – Moves items within a row if used on the main(x) axis
+
+Align-items: Align items moves items (or text) within a column but requires a height property.ox Example, you can center a Title in the middle of a container (box)
+
+Flex-direction:column – Creates a column on the x axis (cross axis)reversed
+Align-items: start will move the columns to the start (or left) of the page
+
+To center a text within a display:flex item, you can also add in another display flex and justify-content to center main axis. You can also align-items in the center by using align-items center to center the y axis
+
+Flex-wrap is like text wrap. Any addition items within a container that cannot fit will move to the next row (or column)
+Flex-basis – adjust each item in each container. Can customize different sizes
+Flex-Grow – default of 0. 
+
+Flex-flow: (direction) (wrap). Flex flow is a shorthand version of both row and wrap in one property
+
+Align-content: Aligns items within a row. Similar to justify-content but works with flex-wrap 
+
+Flex: This is a shortcut property with the values of grow, shrink and basis
+Flex-basis: Gives a property a min width(similar)
+Flex-Grow:  Grows each item to take up a container. Begins at 0 and can select a different grow using nth-child. For example, if an element has the same flex basis at 100px but a different element is selected nth-child, the flex grow property will also affect the targeted element 
+Flex-shrink: Similar to flex-grow but will reduce the sizing. For example, a nth-child selected property will have a larger shrink value . Both flex-grow and flex-shrink will avoid any overflow for responsive web pages
+
+You can select (nth-child) to filter out a single element to have a larger effect on its growth and shrink properties 
+
+Order: Assigning a value to an element decides the order in which the element is displayed. The higher the value, the less priority . A -1 has a higher value than a 4 , for example. 
+***If an element has a reverse property, than the above statement is reversed, meaning that a higher number will have priority and a negative (or 0) will have less priority. 
+
+CSS Grid
+Grid-auto-flow: row is the quickest way after display:grid to assign an element to a grid
+Grid-auto-flow: column will create a column (horizontal) 
+
+Grid-template-columns: Create individual width per column divisible by the total amount of divs. Example, 3 values with 6 dives will create 3 columns AND 2 rows.
+
+Fraction units (fr) is commonly used in CSS Grid. A higher value gives priority than a lower value.
+You are able to mix different values using px, rem, %, fr, etc.
+
+Grid-template-columns: repeat (4, 1fr) is a shortcut from the above statements. The values inside the () reflects the width column inputted . If the amount of values does not match the amount of elements, the elements take on the previous values
+
+Grid-auto-rows: This adds how “tall” a column is. We can also use min-max by combining both a min and max sizing. Setting ‘auto” will reflect a response design so that as you increase the page, the grid row also expands in size. And by setting a min, the height will never go below the min value .
+
+(***You can also use grid-template-rows)
+row-gap: Adds a gap in between a row
+column-gap: adds a gap between each columns
+gap: combines both row and column. Row value will be assigned first. Shortcut 1 value will assign both values
+
+Grid-column-start (end) Assigns the start and end of an element based on the amount of grid containers (or divs, boxes) . For example, a 6 grid div container, with a selected element of start: 1 and end 4, will take up 4 spaces (left to right) with 2 spaces assigned to default container
+This also applies with row but will take up a designated row . The ‘end’ ends before the number value
+
+Shortcuts
+Grid-column: start / end; 
+grid-row: start / end
+
+We can nest a grid inside a display grid. Combining align-content and justify-content is a common technique to center a text in the middle of a container
+
+place-content: is a combination of justify and align content. We can use a single value (example ‘center) to automatically assign a center value 
+
+Grid-template-areas:  Specifically assign the number of rows and columns using a blank prop within a quote. Example below with 9 columns
+
+‘hd hd hd hd hd hd hd hd hd ‘
+‘mn mn  mn mn mn mn sb sb’
