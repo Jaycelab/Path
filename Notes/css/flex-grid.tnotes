@@ -126,3 +126,56 @@ Align-items: Positions items vertically within a grid cell. It defaults at stret
 Justify-items: Positions items horizontally (x-axis) within a cell. Default is also set to streth
 
 place-items : is the shortened version for align and justify items with the order being center followed by stretch. You can also assign a single value to assign both properties. 
+
+align-content / justify-content / place-content - Assigns an element vertially within a CONTAINER. It is defautl start
+
+As a summary, items are usually the text or images within a cell. And content is the cell within a grid container 
+
+grid-template-areas: each double quote represents a single row. So for example, if you have 3 rows, you would set up three 'double quotes', Example below
+
+grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end] (*THREE COLUMNS*)
+grid-auto-rows: 60px auto 100px (**THREE ROWS WITH 1st row at 60px , 2nd row at auto and 3rd row at 100px)
+
+grid-template-area:
+'header' 'header' 'header'
+'main' 'main' 'sidebar'
+'footer' 'footer' 'footer'
+
+(**The reason we list 'header' 3 times is because it is a visiual represenation of EACH column. In this case , since we previosly defined 3 columns, we would be listing header 3 times to span the full width of the container)
+
+.header{
+	grid-area: header;
+}
+.main{
+	grid-area: main;
+}
+.sidebar{
+	grid-area: sidebar;
+}
+.footer{
+	grid-area: footer;
+}
+
+Example above, the 3 columns of header and footer represent a column of three rows. And 2 columns for MAIN and 1 column for sidebar as reference aboved ('main' 'main' 'sidebar')
+
+You can think of grid area as a 'blueprint' of your cells within a container. You can name them anything in the grid-area section however its best advised to reference a similar name as the class
+
+grid-template: is a shorthand version in which you can combine grid-template-column/row + grid-template-area. The values are in between a set of quotes and not indvidually Example below:
+
+grid-template: 
+'h h' h' 60px
+'main main sidebar' auto
+'footer footer footer' 100px
+
+grid: ; is a shorthand version of the following below:
+
+grid-template-rows: 50px 200px;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 100px;
+grid-auto-flow: row;
+
+grid: 50 px 200px / repeat (3, 1fr); (**rows and columns)
+
+We can set a row and column to be both implicit and explicity however we CANNOT set a value for each row and column to be both. The following below is fine:
+
+grid: auto-flow 100px / repeat (3, 1fr);
