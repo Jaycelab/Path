@@ -102,7 +102,8 @@ Auto-fill will fill a container as long as the size is set and there is space wi
 repeat (auto-fill) will automatically fill up each element for a responsive design and will create a column if there is additional space
 repeat (auto-fit) will automatically fill a container but will NOT create any additional spaces if available within a container.
 
-With grid-template-column/row we are also able to individually assign names to each element by surround the values inside a []. Example below with 3 columns and 2 rows
+With grid-template-column/row we are also able to individually assign names to each element by surround the values inside a []. 
+Example below with 3 columns and 2 rows
 grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1 fr;
 grid-template-rows: 100px 50px;
 
@@ -179,3 +180,17 @@ grid: 50 px 200px / repeat (3, 1fr); (**rows and columns)
 We can set a row and column to be both implicit and explicity however we CANNOT set a value for each row and column to be both. The following below is fine:
 
 grid: auto-flow 100px / repeat (3, 1fr);
+
+If manually entering a start and end, you can use a negative value for the end value to span the entire column/row. 
+We can alo use the name as the value when determing the width/height. For example , we can set grid-column-end: col-3;
+
+Other examples are span with a value that determines how many columns/row we want to span. Example, span 3 , will create a grid-column-end of 3
+
+align/justify/place-self- Allows to poistion a single item within anywhere from its own cell. For example, if you have 6 elements in a single container, you can set a fixed location for cell 5 anywhere inside the container. place-self is also a short hand version for both properties
+
+grid-area- Is a entire shorthand version of 4 values seperated by a /
+
+
+grid row start, grid column start, grid row end, grid column end 
+
+grid-area: is a property that we can set a value after specifically naming a value with grid-template-area
