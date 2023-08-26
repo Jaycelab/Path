@@ -1,5 +1,7 @@
 - Tip: Add flex-direction: column on main viewpoint. Set a @media query of min-width: 600-750px to flex-direction:row. This will add a responsive design without needing to add additional spacing once the window becomes smaller. 
 - VW is the 'view window'. Equivalent to the actual users window browser window. Commonly used on "height" properties
+- class selectors can be applied to many elements
+- id selectors should only be applied to one element in a single html file. For example, there should only be 1 ID per html file.
 = Add "GAP" property to add in margins between rows 
 - Flexbox axis is determined by the flex-direction property. Default is "row" and can be adjusted to "column" property. 
 - Justify content with be the main content of the flex-direction. It will only work if there are empty spaces. "Center" takes the content and centers within the parent container. "Flex-start" and "flex-end" will either begin from the left or right of the container. "Space-between" will look for extra space of the container and distribute it between the elements. "Space-around" is not commonly used as it distributes even spaces but not at the first and last element (maybe useful in some use cases) "Space-evenly" is a more useful property

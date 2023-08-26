@@ -9,6 +9,7 @@
 - <h1> is used for the main heading on a page, while the rest are used for subheadings. There are a total of 6 heading levels. Smaller headings are used to show that one section is inside another
 - <p> tag is another example of an element in which a closing tag is optional. However leaving off a closing <p> tag is still implied --meaning the browser will figure out where the element should be closed 
 - <sub> and <sup> stand for "subscript" and "superscript". Originally, HTML started out as a tool for scientific and academic work; and these are really useful for science and math, like writing x2+3x+4 = 1 or chemical formulas like H2O.
+- .. means to go up one level path. . means to stay within the current directory. 
 - alt = text description of the image
 - browsers gets web pages by communicating with servers 
 - Difference between <br> and <p> is br just tells the browser to end the line. P tells the browsers to create an invisible box (block) around the surrounding text that has a height, width and margin. P is considered a block element. BR is considered an inline element
