@@ -1,0 +1,9 @@
+CSS Selectors:
+selector > selector: You can seleect a child selector directly below above (1 generation deep) from a parent selector. This will only work if its a direct child
+**Rather than selecting "div" use class name > element (or class) instead
+
+- descendant = apply to a descendent of left side. This can be a non-direct child of a parent as long as a class is present on the left side of the property. For example, you can select a class 1 > class 2 > p
+
+- selectorselector . Selecting with no spaces. Example: To target <h1 id='title' class='big-heading'>Hello</h1>. h1#little.big.heading. # will be used for ID and . for class. If any spaces are present, it is filled with a . instead.
+
+- combining combiners - selector selectorselector is a combination of the above examples
