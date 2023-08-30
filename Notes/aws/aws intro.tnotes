@@ -1,3 +1,12 @@
+- AWS has reionas all around the world and names are styles using hyphens and numbers. 
+
+- A region is a cluster of data centers. Choosing am AWS region will depen do the complicanace with data governance and legal requirments. Promixity to customers base location will also greatly reduce latency 
+
+- Availability zones are zones that are inside a region. A zone usually consists of a min of 3 and a maximum of 6 zones. Example: ap-southeast-2a/2b/2c. An AZ is one or more discrete data center with redudant power, network and connectivty. They're separate from each other so that they're isolated from any disasters. Each zone is also connect with high bandiwdth, ultra -lowe latance networking.
+
+- IAM: Identity and Access Management, Global Service. Root account created by default and should never be used or shared. Users are people within the organization and can be grouped, for example can be grouped into developers or operators. Users can belong to multiple groups or no groups. 
+
+
 Elastic load balancing (ELB)
 Service that distributes incoming internet traffic to multiple EC2 instances in 
 case of stoppage or overload
