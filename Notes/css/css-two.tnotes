@@ -26,3 +26,13 @@ https://appbrewery.github.io/css-positioning/ -->
 REMEMBER TO USE TOP, LEFT, RIGHT ETC INSTEAD OF MARGIN!!
 
 - Span : Span is commonly used in between 2 elements and has a default display of inline. There are a total of 3 display properties and most properties have a default display of block.
+
+
+- Float: Can be applied to both left and right sides targeting images, paragraphs, headings, etc. Clear is commonly used on the footer to wrap around the containers with values commonly set to both or left/right. 
+
+- Responsive Webstie: There are 4 primary methods of applying responsiveness to a website. They are: 
+
+* Media Queries
+* CSS Grid 
+* CSS Flexbox 
+* External Framworks eg Tailwind, Bootstrap , SASS
