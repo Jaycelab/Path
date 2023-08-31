@@ -1,4 +1,4 @@
-# My journey to learning full-stack development and cloud computing
+# Journey to full-stack development and cloud computing
 
 **October**
 ![week-1](https://github.com/Jaycelab/Path/blob/main/Monthly%20Log/October%202022/summary-report.png)

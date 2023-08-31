@@ -36,3 +36,27 @@ REMEMBER TO USE TOP, LEFT, RIGHT ETC INSTEAD OF MARGIN!!
 * CSS Grid 
 * CSS Flexbox 
 * External Framworks eg Tailwind, Bootstrap , SASS
+
+- A display of block will take up an entire full width. For example, a container with a block display will not take up the same space but will instead create a new line
+
+- Inline will create an element on the same line and will fill the full width once all elements are occupied. Inline elements cannot set a width or a height because it defaults to the size of the actual content. Ex, an element with "Hello" will only take up the width and height of 5 letters,
+
+- Inline-block: Block sets height and width. Inline can have elements that can go on the same line. Essentially, it gives the power of both allowing to change the height and width. Example, if the width is too large, it will occupy a new line however if it's too small, it can also occupy the same line from a previous element.
+
+- Float: Wraps around another element. For example, we can wrap an image around a paragraph by setting a float:left (or right)
+
+- Media Query: Instead of a selector, a @media is used with a breakpoint within paranthesis () then followed my general styling. Examples of a break point can be a mix-width, max-width, min-height, max height etc. The CSS styling is wrapped around a seperate set of curly braces. Setting a max-width: 600px will apply the given values once the width of the page reaches below the 600px breakpoint. However, a min-width with a 600px will apply the opposite since the values are applied once it reaches over 600px. In context, a max-width is in the direction of LEFT and the mix-width is in the direction of RIGHT. Example below:
+
+  @media (max-width: 600px) {
+  div {
+  height: 100px;
+  width: 100px;
+  }
+  }
+
+- You can also combine breakpoints by using and in between. For example (min-width: 600px) and (max-width: 900px) Essentially this means that the given value will be applied once the page reaches over 600px and below 900px.
+
+- You can also reverse this concept by first applying the max width property , using AND to separate and then follow with a min-width. This means that the styles will be applied for screens less than 600px and greater than 900px (bascailly a certain range within the page width will only become standard styling )
+
+@media screen may also be used but not neccesarily as the default screen orientation is set to landscape. Another value commonly used is Print which will apply display changes once the page is set to print
+(\*\*\*Check MDN for more features and selectors)
