@@ -1,0 +1,26 @@
+- Applying display flex does not apply to the following rules: inline, block, inline-block & none. Flex has it's own set of rules and properties that is solely for flex properties
+
+Different elements have their own display depending on the type of element. For example: 
+	Div - Block
+	Span - Inline
+	P - etc
+
+However, if applying the entire elements above in a flex container, all the default display will be overridden by the flex display type. 
+
+- The width of the flex container will depend on the containers of the container regardless of the type of element (p, img, h1, etc) It will try to make all the elements fit within its width
+
+- Applying gap can be used by px for static but can also be applied by % or more responsive, 1rem (adapt based on the top level size of the content)
+
+- The defaul of a flex is a full width of it's container . However, you can also apply an inline-flex, in which the container will take up as much width of the current elements but will fill as other elements are added 
+
+- Flex-direction is default to row filling up the entire width of a container. 
+
+Main axis is left to right if set to row. And Cross is vertical (perpendicular to the main axis) Setting a flex-direction to column with reverse the axis and set the main axis to vertical and cross axis to horizontal
+
+- Flex-basis: This can be similar to setting a width or height depending on the direction . Ex, setting a flex-basis of 100px while set to row, will create a "width" of 100px and fill elements along the main axis (horizontal) 
+However, setting a flex-basis of 100px while set to column, will create a "height" of 100px filling the main axis (vertical). 
+
+Essential they are 'flexing' along the main axis depending on the direction of row or column
+If setting a flex basis, remember that it is commonly placed on the elments inside the container and not the actual container itself. Therefor, we should use a unversial selector followed by the class of the container (example container * ) The properties on the container itself would be the gap , display , positioning etc
+
+- We can either set the display to a flex with a set width OR we can also set to inline-flex so that the elements automatically fill in the container 
