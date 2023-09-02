@@ -1,0 +1,32 @@
+AUGUST 2023 RECAP:
+
+HTML
+
+- Revisted topics on page layouts and using sections , main, articles and divs to separate elements to be it's own container or div to set up for grid and/or flex.
+
+CSS
+
+- Revisited CSS to learn and touch up on topics including units, displays, floats, css grid , css flexbox , media query, selectors, class and ids including using emmet as a shortcut on writing CSS code.
+
+- Complete Modules 1 to 9 for bootcamp, 1 challenge project, flexbox froggy and coursera project,
+
+DSAA
+
+- Recap on CS50 lecture 0 2023. learned mostly the basic of binary
+
+JAVASCRIPT
+
+- Learned more on DOM maniuplation by using getelementbyid and query selector to maniuplate ID when a certain action occurs (ex. onclick, however, active, etc)
+- Touched up on OOP and revisted classes, this and super
+- Revisited nested loops and worked on a few challenges frJAVASCRIPT
+  AWS
+
+- Recap on setting up a new environment and authorized user rather than using root. Setup MFA code for authorized login
+- AZ and data centers, setting up a new S3 and EC2, and setting limits for billing to avoid unexpected charges
+
+PROJECT
+
+- Learned more about how to implemnt using pre-set background and font colors.
+- Learned how to create a manual hamburger menu using simple Javascript to affect the display using onclick
+  . Learned how to implement vite.js for setting up a new webpage
+- Completed blackjack and counter app using vanilla js and dom manipulation.
