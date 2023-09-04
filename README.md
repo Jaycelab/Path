@@ -1,8 +1,12 @@
 # Journey to full-stack development and cloud computing
 
+---
+
 ## Goal Roadmap
 
 ## ![roadmap](https://github.com/Jaycelab/Path/blob/main/Roadmap/goal-roadmap.png)
+
+---
 
 **August 23**
 ![august-23](https://github.com/Jaycelab/Path/blob/main/Monthly%20Log/August%202023/aug-summary.png)
