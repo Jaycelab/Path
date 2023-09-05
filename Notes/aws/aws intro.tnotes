@@ -1,8 +1,33 @@
+- The six advatanges of cloud computing include: 
+	1. pay-as-you-go
+	2. banefit from massive econimies of scale
+	3. stop guessing capacity
+	4. increase speed and agility
+	5. realize cost savings
+	6. go global in minutes 
+
 - AWS has reionas all around the world and names are styles using hyphens and numbers. 
 
 - A region is a cluster of data centers. Choosing am AWS region will depen do the complicanace with data governance and legal requirments. Promixity to customers base location will also greatly reduce latency 
 
 - Availability zones are zones that are inside a region. A zone usually consists of a min of 3 and a maximum of 6 zones. Example: ap-southeast-2a/2b/2c. An AZ is one or more discrete data center with redudant power, network and connectivty. They're separate from each other so that they're isolated from any disasters. Each zone is also connect with high bandiwdth, ultra -lowe latance networking.
+
+- AWS Region considerations include 
+	1. Compliance
+	2. Latency
+	3. Pricing
+	4. Service availability
+
+= Data zones inside AZ. AZ inside of regions
+
+- Edge locations are global locations where content is cached. For example, if your media content is in London and you want to share video files with your customers in Sydney, you could have the videos cached in an edge location closest to Sydney
+
+
+- AWS Wavelength allows applications to use AWS compute and storage services within 5G mobile network
+
+- Requirement set within a certain region that varies.  Latency is how close the IT resoucres between the customer base location is.  Pricing can vary from region to region and dependent on many factors including tax, location etc. Service availabilty may not always roll into all the regions right away. .
+
+- 
 
 - IAM: Identity and Access Management, Global Service. Root account created by default and should never be used or shared. Users are people within the organization and can be grouped, for example can be grouped into developers or operators. Users can belong to multiple groups or no groups. 
 
@@ -35,3 +60,9 @@ Assign users to groups and assign permissions to groups
 Create Roles for giving permissions to AWS services. 
 Use access keys for programmatic access (CLI/SDK)
 Avoid root account - only for creating separate accounts 
+
+- If a task takes 24 hours to complete at a rate of 10 cents (2.40), EC2 can break down these taks into 24 seperate tasks at 1 hour each achieving faster results at the same cost, effectivley reducing the time from 24 hours to  1 hour instead.
+
+- Elastic means resizable which translates in having the ability to customize the virtual cpu , storage, ram etc.
+
+- Amazon CloudFront delivers your content through a worldwide network of edge locations. When a user requests content that is being served with CloudFront, the request is routed to the location that provides the lowest latency. So that content is delivered with the best possible performance. CloudFront speeds up the distribution of your content by routing each user request through the AWS backbone network to the edge location that can best serve your content.
