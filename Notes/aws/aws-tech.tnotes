@@ -51,3 +51,5 @@ The customers' level of responsibility depends on the AWS service. Some services
 
 - Access keys consist of two parts: Access key ID and Secret acces key
 Similar to a user name and password combination, you need both the access key ID and secret access key to authenticate your requests through the AWS CLI or AWS API. Access keys should be managed with the same security as an email address and password.
+
+- MFA three catageories include: Something you know, something you have and something you are. Example is a password/pin, a timed generated code and a fingerprint/eye to unlock

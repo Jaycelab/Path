@@ -65,4 +65,3 @@ Avoid root account - only for creating separate accounts
 
 - Elastic means resizable which translates in having the ability to customize the virtual cpu , storage, ram etc.
 
-- Amazon CloudFront delivers your content through a worldwide network of edge locations. When a user requests content that is being served with CloudFront, the request is routed to the location that provides the lowest latency. So that content is delivered with the best possible performance. CloudFront speeds up the distribution of your content by routing each user request through the AWS backbone network to the edge location that can best serve your content.
