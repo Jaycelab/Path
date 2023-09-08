@@ -7,3 +7,9 @@
 - grid-template : Is a combinationg of grid-template rows/columns. You would first define the rows followed by columns 
 
 - AUTO: If setting an auto value to a grid-row, the container fill try to fit the entire CONTENT. However, if setting auto a grid-column, it will instead try to fit 100% 
+
+- Setting a manual width/height when applying grid display is NOT responsive. 
+
+- minmax: When there is enough space on the horizontal, it will give the second column more space. For example on a minmax(400px, 800px), the width can go all the way up to 800 pixels and all the way down to 400px. Eseentially, we are setting a 'stop' at 400px min and 800px max.
+
+- repeat: repeat(how many rows/columns, size of row/ column)
