@@ -40,3 +40,48 @@ ReactDOM.render(<h1>Hello World!</h1>, document.getElementById("root"));
 - When adding multiple variables, you can eliminate the need of adding a + "" as the inner HTML treats the line as a string element, so simply pressing space will also create a space as well
 
 - Template literals also works
+
+- Two ways to export modules in JS
+1. Default Exports
+2. Named Exports
+
+1. export default 'function name'
+2. export function name OR
+export {function, function} (if mulitple functions)
+
+- Importing an export using default
+
+import functionname from "./xx ";
+eg. import addTwo from "./addTwo"
+(export default addTwo)
+*** You would type the keyword from followed by location of the file WITHOUT the js.extension
+
+- React JSX code is transpiled to plain Javascript code so that it can work with modern browsers. Example: 
+
+-- function Heading(props) {
+    return <h1>{props.title}</h1>
+}
+
+will return plain JS code
+
+-- "use strict";
+
+function Heading(props) {
+  return /*#__PURE__*/React.createElement("h1", null, props.title);
+}
+
+The code returns React.createElement("h1", null, props.title);
+without the comments which creates a React object, which is createElement() method. The method is invoked into 3 arguments, 'h1', null, props.title
+
+
+- 1st argument is for WHAT the DOM is to render.
+- 2nd argument is any HTML arugument that should be added. 
+- 3rd property is the contents of the innerHTML of the DOM elment specified as the first argument. So in this case , it will be the contents of the innherHTML of the 'h1' element.
+
+- Javascript functions can be used as a component in React 
+
+- Return statements can be spread over multiple lines by surrounding the code that follows the return keyword with an opening and closing paranthesis 
+
+- function Example () {
+	return (<h1>Example</h1>)
+}
