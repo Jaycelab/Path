@@ -13,7 +13,7 @@ selector > selector: You can seleect a child selector directly below above (1 ge
 <!-- For hands on example:
 https://appbrewery.github.io/css-positioning/ -->
 
-- Static: This is the default flow when applying html. We can set position to static however it is not need as it is the defauly position. Any new elements are placed underneath the property
+- Static: This is the default flow when applying html. We can set position to static however it is not need as it is the default position. Any new elements are placed underneath the property
 
 - Relative: This is the most commonly used position. The position is relative to it's default position. For example a default static position has a default position and when a relative position is applied, the position values are applied relative to the static position. In simpler terms, relative position takes the static position and applies positioning
 
@@ -60,3 +60,44 @@ REMEMBER TO USE TOP, LEFT, RIGHT ETC INSTEAD OF MARGIN!!
 
 @media screen may also be used but not neccesarily as the default screen orientation is set to landscape. Another value commonly used is Print which will apply display changes once the page is set to print
 (\*\*\*Check MDN for more features and selectors)
+
+
+Position Property
+The CSS position property sets how an element is positioned in a document. We can use it to determine how we want to position individual elements based on the values you give the position property.
+
+The position property takes five values.
+
+Static - default
+
+Relative
+
+Absolute
+
+Fixed
+
+Sticky
+
+Relative
+Relative position means that an element is positioned relative to its original position in the normal flow. By setting an element to just have position: relative nothing will happen. We will need to use the placement properties to change how the element is positioned relative to its original position.
+
+Basically when you set a HTML element to position: relative, it will remain in the flow of the layout. But, by using the placement properties you can move the element around. Let’s look at an example to cement your understanding of the relative position.
+
+Absolute
+Absolute positioned elements are removed from the normal document flow, and the space that the element was originally occupying is no longer reserved for that element. I like to remember it by saying it is 'absolutely not there'.
+
+When the element is given position: absolute all other elements behave as if that element is no longer in the document. Therefore, there is no space reserved for that element in the page layout.
+
+An important point and something that stumped me when I was learning is that an element with position: absolute is positioned relative to its closest positional ancestor. What this means is that for absolute positioning to work, the parent element must have a position property value other than the default of static.
+
+Sticky
+This is a relatively new positioning property. The sticky positioning value is positioned according to the normal flow of the document, yet it is also a mix of both position relative and position fixed. What I mean by this is that it behaves as a relatively positioned element until the page reaches a set scroll point then it will behave as a fixed position element.
+
+This is how you get those cool navbar effects when it scrolls to a certain point and changes color.
+
+Fixed
+Fixed positioning works like absolute positioning in that it is removed from the normal document flow, and the space that element was originally occupying is no longer reserved for that element.
+
+The big thing with Fixed is that fixed positioned elements are positioned relative to the viewport. What this means is that when you scroll down the page, the element remains in its original location on the page. This is often used for navigation bars, which no matter where the users scrolls on the page always remain visible at the top of the page.
+
+Closing thoughts
+Personally my biggest take away and the one that cause the most nightmares was not knowing parent elements needed a position property value to work with absolute!!! if you take nothing else away from this please take that point.
