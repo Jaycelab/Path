@@ -59,12 +59,13 @@ function calcChange (startingAmount, costPerBottle) {
 console.log(`Hello master, here is your ${getMilk(10, 3)} change `)
 
 //This example takes the outputs of functions to insert inside other code . This will reduce the amount of code as we only will
-// need to change the params rather than the inside code instead */
+// need to change the params rather than the inside code instead 
 
+** BMI Example 
 // Calculate BMI . BMI = weight/ height(squared)
 
-/* let kg = 1;
-let weightPounds = kg * 2.20462262185;  conversion not needed for this problem*/
+let kg = 1;
+let weightPounds = kg * 2.20462262185;  conversion not needed for this problem
 
 function bmiCalc (weight, height) {
 	let formula = Math.round(weight / Math.pow(height, 2)); //Math.Power a cleaner exponent
@@ -72,4 +73,15 @@ function bmiCalc (weight, height) {
 }
 
 let bmi = bmiCalc(81.6466,1.73)
-console.log(bmi)
+console.log(bmi) */
+
+
+// Love Calculator
+
+//Math.random()
+// Math.floor
+
+let result = Math.random() * 100;
+result = Math.floor(result) + 1;
+
+console.log(result);
