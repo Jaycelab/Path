@@ -1,4 +1,4 @@
- /*Age until 90 problem
+/*Age until 90 problem
 
 
 function lifeInWeeks(age) {
@@ -69,12 +69,20 @@ let weightPounds = kg * 2.20462262185;  conversion not needed for this problem
 
 function bmiCalc (weight, height) {
 	let formula = Math.round(weight / Math.pow(height, 2)); //Math.Power a cleaner exponent
-	return formula
+    
+    if(bmiCalculator  < 18.5){
+        return `Your BMI is ${bmiCalculator }, so you are underweight.`
+        
+    } else if ( bmiCalculator  < 18.5 && bmiCalculator  > 24.9) {
+        return `Your BMI is ${bmiCalculator }, so you have a normal weight.`
+        
+    } else if (bmiCalculator  > 24.9) {
+        return `Your BMI is ${bmiCalculator }, so you are overweight.`
+    }
 }
 
 let bmi = bmiCalc(81.6466,1.73)
-console.log(bmi) */
-
+console.log(bmi) 
 
 // Love Calculator
 
@@ -84,4 +92,21 @@ console.log(bmi) */
 let result = Math.random() * 100;
 result = Math.floor(result) + 1;
 
-console.log(result);
+if (result === 100) {
+  alert(`Your love score is ${result} %!`);
+} else {
+  alert(`Your love score is ${result} %!, which is pretty basic`);
+}
+
+
+// Array
+let guestList = ["Jason", "Elmer", "Brian", "Abie"];
+let name = prompt("What is your name?");
+
+if (guestList.includes(name)) {
+  alert("Wecome to the Club!");
+} else {
+  alert("You are not welcome");
+}
+
+*/
