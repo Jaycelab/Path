@@ -35,3 +35,61 @@ printCarInfo(truck);
 - Expressions in JSX needs to be wrapped inside {} brackets if within an element or it will evaluate it as "text" similar to HTML.
 
 - Curly braces themselves won't be treated as JSX or as Javascript. Instead they are treated with markets that signal the beginning and end of a Javascript injection into JSX. 
+
+- Variables can be accessed inside of a JSX expression even if it is outside of it's scope
+
+*JSX* 
+- When writing JSX, it's common to use variables to set attributes. For example:
+
+const sideLength = "200px";
+
+const panda = (
+<img 
+  src = "images/panda.jpg"
+  alt = "panda"
+  height = {sideLength}
+  width = {sideLength}
+/>
+);
+
+- Creating a new line per attribute will make the code more easily readable. 
+- Object properties are also often used to SET attributes. Example below: 
+
+const pics = {
+  panda: "http://bit.ly/1Tqltv5",
+  owl: "http://bit.ly/1XGtkM3",
+  owlCat: "http://bit.ly/1Upbczi"
+}; 
+
+const panda = (
+  <img 
+    src={pics.panda} 
+    alt="Lazy Panda" />
+);
+
+const owl = (
+  <img 
+    src={pics.owl} 
+    alt="Unimpressed Owl" />
+);
+
+const owlCat = (
+  <img 
+    src={pics.owlCat} 
+    alt="Ghastly Abomination" />
+); 
+
+*Event Listener*
+- An event listerners attribute's name should be sometihng similar to onClick or onMouseOver. The word 'on' plus the type of event that you are listening for. Refer to https://react.dev/reference/react-dom/components/common for common event listener names 
+
+- An event listerners attribute value should be a function. The above example above would only work if the name were a valid function that had been defined somewhere else
+
+- Event listeners in HTML is written in all lower case, however in JSX event listerners are written similar to Javascript or camelCase, in this case onClick or onMouseOver. Example of an image onClick event listener below: 
+
+const kitty = (
+  <img onClick={makeDoggy}
+    src="https://content.codecademy.com/courses/React/react_photo-kitty.jpg" 
+    alt="kitty" />
+);
+
+root.render(kitty);
