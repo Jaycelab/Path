@@ -1,0 +1,37 @@
+- Reacts render() method only updates DOM elements that have changed, meaning that if you render the exact same thing twice in a row, the second render will do nothing. 
+
+*Virtual DOM*
+- By comparing the new virtual DOM with a pre-update version, React figures out exactly which virtual DOM objects have changed. This process is called “diffing.”
+
+- Steps when DOM is updated in React
+1. The entire virtual DOM gets updated
+2. The virtual DOM gets compared to previous DOM before it updated. React then figures out which objects have changed.
+3. The changed objects, and the changed objects only, gets updated on the real DOM.
+4. Changes on the real DOM is reflected on the screen in real time, hence the changes 'reacts'
+
+- Deconstructing arrays can be set by first assigning a variable to an object (key value pairs)
+Followed by a bracket wrapped variable(s) asigned to original variable
+
+*Function Deconstructing*
+let truck = {
+  model: '1977 Mustang convertible',
+  maker: 'Ford',
+  city: 'Detroit',
+  year: '1977',
+  convertible: true
+};
+
+const printCarInfo = ({model, maker, city}) => {
+  console.log(`The ${model}, or ${maker}, is in the city ${city}.`);
+};
+
+printCarInfo(truck);
+// Prints: The 1977 Mustang convertible, or Ford, is in the city Detroit.
+
+- Destructuring is a way to unpack values from arrays and objects and assign them to variables or parameters
+
+- In JSX, it is required to include a self closing tag (slash before the final angle bracket) as opposed to HTML where it is optional. Without a slash, it will create an error in react
+
+- Expressions in JSX needs to be wrapped inside {} brackets if within an element or it will evaluate it as "text" similar to HTML.
+
+- Curly braces themselves won't be treated as JSX or as Javascript. Instead they are treated with markets that signal the beginning and end of a Javascript injection into JSX. 
