@@ -93,3 +93,95 @@ const kitty = (
 );
 
 root.render(kitty);
+
+- You CANNOT inject if statements inside a JSX expression. However it is possible to create an expression  if it is NOT injected between JSX tags but on the outside. Example below: 
+
+if (user.age >= drinkingAge) {
+  message = (
+    <h1>
+      Hey, check out this alcoholic beverage!
+    </h1>
+  );
+} else {
+  message = (
+    <h1>
+      Hey, check out these earrings I got at Claire's!
+    </h1>
+  );
+}
+
+Excercise example below using expression with img element
+
+if (coinToss() === "headers") {
+  
+  ///onbject, key-value
+  img = <img src = {pics.kitty} />
+} else {
+  img = </img sec ={pics.odoggy} />
+};
+
+
+*Ternary Operator*
+
+//using bracket notation with text as the object key value
+
+const pics = {
+  kitty: 'https://content.codecademy.com/courses/React/react_photo-kitty.jpg',
+  doggy: 'https://content.codecademy.com/courses/React/react_photo-puppy.jpeg'
+};
+
+const img = <img src={pics[coinToss() === "heads" ? kitty : doggy]} />;
+
+root.render(img);
+
+*&& Operator*
+ {judgmental && <li>Nacho Cheez Straight Out The Jar</li>}
+
+ *MAP in JSX*
+ - Uses arrow functions .map(var => )
+Example:
+
+const strings = ['Home', 'Shop', 'About Me'];
+
+const listItems = strings.map(string => <li>{string}</li>);
+
+<ul>{listItems}</ul>
+
+Sets an array of strings  and .map() returns a new array of <li>
+
+{listItems} will evaluate to an array, because its the returned value of map()
+
+// This is fine in JSX, not in an explicit array:
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>
+
+// This is also fine!
+const liArray = [
+  <li>item 1</li>, 
+  <li>item 2</li>, 
+  <li>item 3</li>
+];
+
+<ul>{liArray}</ul>
+
+
+// forEach()
+- We can use .forEach() to create a list of JSX elements from an array as long as we are using .forEach() from outside a JSX expression as .forEach() does not evaluate to a value like .map() does. That said, .forEach() takes a little more code to do the same thing that .map() can do/
+
+- For example:
+Using .forEach():
+
+const myArr = ['one', 'two', 'three'];
+
+const myArrMadeFromForEach = []; // we create a new array which will evaluate to a value when we inject it into a JSX expression
+
+myArr.forEach((item, i) => myArrMadeFromForEach.push(<li key={item+i}>{item}</li>)); // we push a JSX element containing a value to our 'myArrMadeFromForEach' because `.forEach()` does not return any value, nor does it mutate the array on which it is called
+
+const myList = (
+  <ul>{myArrMadeFromForEach}</ul> // `myArrMadeFromForEach` will evaluate to an array of `<li>` elements
+)
+
+ReactDOM.render(myList, document.getElementById('app'));
