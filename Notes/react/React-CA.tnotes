@@ -228,9 +228,20 @@ const greatestDivEver = React.createElement(
   "i am div"
   );
 
-- React order
+*React order*
 1.A JSX element renders.
 2.The entire virtual DOM gets updated. 
 3. The virtual DOM is compared to what it looked like before it updated to figure out which objects have changed.
 4. The changed objects, and the changed objects only, get updated on the real DOM.
-5. 
+5. Changes on the real DOM cause the screen to change.
+
+*Animal Fun Facts Project*
+
+- Import
+A.) Add import{} from "./xxxxx";
+B.) Add import React from "react";
+C.) import {createRoot} from "react-dom/client";
+
+- Variables
+A.) Set variables targeting DOM with document.getElementById() or querySelector();
+B.) Set root variable with method createRoot() passing targeted variable
