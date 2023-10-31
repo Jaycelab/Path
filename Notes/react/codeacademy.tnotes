@@ -245,3 +245,4 @@ C.) import {createRoot} from "react-dom/client";
 - Variables
 A.) Set variables targeting DOM with document.getElementById() or querySelector();
 B.) Set root variable with method createRoot() passing targeted variable
+// creating a React root renders content

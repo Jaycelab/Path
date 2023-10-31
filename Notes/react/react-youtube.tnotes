@@ -41,3 +41,7 @@ return (
 	})} 
 	</div>
 );
+
+
+Styling CSS inline in React requires an object . The object{} is wrapped inside another set of {}. Example: 
+ style={{color: "red"}}. (Note, since this is JSX, the color "red" is wrapped in quotes )
