@@ -1,0 +1,25 @@
+- React 18 introduced a new way of rendering , createRoot();
+
+changes include:
+1. import ReactDOM from 'react-dom/client'
+
+2. Previouly used was 
+ ReactDOM.render(navbar, document.getElementById("root"))
+ ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+// In summary, we are rearranging the arguments and adding the .render method inside createRoot
+
+3. Another way of writing this is also assigning the root method to a variable. Example:
+
+const root = ReactDOM.createRoot(doucment.getElementbyId("root"))
+root.render(navbar)
+
+*REVIEW*
+My solution:
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(jsx)
+
+Correct Solution:
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(jsx)
+//created two variables

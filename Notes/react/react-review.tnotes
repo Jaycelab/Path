@@ -1,0 +1,6 @@
+- import React from 'react'; === Creates a Javascript object that contains properties needed to make React function such as React.createElement();
+
+- import ReactDOM from 'react-dom/client' creates another Javascript object. This object contains methods that help React interact with the DOM, such as ReactDOM.create();
+
+- functional components should be written in PascalCase. Similar to Javascript, components require curly brackets inside the body for JSX to be displayed. This essential will act as aset of instructions, explain how it should build a React component
+
