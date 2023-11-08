@@ -10,8 +10,11 @@
 
 ---
 
+**October 2023**
+![october-23](https://github.com/Jaycelab/Path/blob/main/Monthly%20Log/October%202023/oct-summary.png)
+
 **September 2023**
-![august-23](https://github.com/Jaycelab/Path/blob/main/Monthly%20Log/September%202023/sept-summary.png)
+![september-23](https://github.com/Jaycelab/Path/blob/main/Monthly%20Log/September%202023/sept-summary.png)
 
 **August 2023**
 ![august-23](https://github.com/Jaycelab/Path/blob/main/Monthly%20Log/August%202023/aug-summary.png)
