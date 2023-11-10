@@ -36,7 +36,8 @@ However, you do not always have to return an element inside the render() method 
 1. call createRoot() method to create a React root container for displaying conent. React apps typically have a single root DOM node, and everything inside is managed by React DOM. In other words, we give createRoot a DOM element to render in such as .getElementById or querySelector and React will take over managing the DOM inside it.
 2
 
-- Owl comonent object example: 
+- Owl comonent object example:
+ 
 import React from 'react';
 
 const owl = {
@@ -44,7 +45,7 @@ const owl = {
   src: 'https://content.codecademy.com/courses/React/react_photo-owl.jpg'
 };
 
-//Define function component here:
+// Define function in PascalCase. Wrap in parenths and brackets for variables. Dot notation for objects
 function Owl(){
   return (
     <div>
@@ -57,3 +58,5 @@ function Owl(){
 };
 
 export default Owl;
+
+
