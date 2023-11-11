@@ -1,0 +1,79 @@
+- When using a return statement, a div element is not needed. A simple <> </> can also be used as well. This is what's called a fragment
+
+- class is not allowed in react as it is a keyword in JavaScript. However, className may be used and is
+
+- <Example>
+    Hello there
+</Example>
+
+- The Hello there text is a child of the Example JSX element. The Example JSX element above is an "invocation" of the Example.js file, which, in modern React, is usally a function component 
+
+- This Hello there text can be passed as a named prop when rendering the Example componnent 
+
+- JSX component can be styled similar to HTML using both a link reference or an inline style wrapping the properties inside curly brackets  within another curly bracket. Remember that both numbers and text requires to be wrapped on quotes. Example below:
+
+function Promo () {
+	return (
+	
+	<div> className = "promo-selection">
+		<div>
+			<h1 style= {{color: "tomato", fontSize: "40px", fontWeight: "bold"}}>
+				{props.heading}
+			<h1>
+		</div>
+		
+		<div>
+			<h2>
+				{props.promoSubheading}
+			</h2>
+		</div>
+	);
+}
+
+export default Promo;
+
+**JavaScript Expression Syntax**
+<h1 style ={}>
+
+- The code aboves means that whatever code you add inside these opening and closing curly braces is to be parased as regular JavaScript. 
+
+- The double curly bracket example is called a "style object literal". Another way of writing this is 
+
+<h1>
+	style={
+		{
+			color: 'tomato',
+			fontSize: '40px'
+		}
+	
+	}
+</h1>
+
+- Aside from converting each property to a string, the property also has to be converted to camelCase and eliminating any hyphens as seen in CSS
+
+- Besides inlining a style object literal, you can also save it inside a variable and then use the variable instead of passing an object literal. 
+
+- Remember to declare a variable BEFORE a return statment as show below:
+
+function Promo() {
+
+cost styles = {
+	color: "tomato".
+	fontSize: "40px"
+}
+
+return (
+	<div className="promo-section">
+		<div>
+			<h1 style={styles}>
+				{props.heading}
+			</h1>
+		</div>
+		<div>
+			<h2>{props.promoSubheading}</h2>
+q		</div>
+	</div> 
+);
+}
+
+- This approach of declaring a variable and assigning styling makes the components more self-contained because they come with their own styles built-in; however it also makes them a bit harder to maintain? **review

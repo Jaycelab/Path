@@ -28,3 +28,22 @@ return React.createElement(
   React.createElement("h1", null, "Hello there")
    );
 }	
+
+- The third arguemnt is now another .createElement call and is how nexted jsx elements work. Nested JSX structures is mainly a group of nested React.createElement calls passed in to other React.createElement calls as thier third argument.
+
+
+*The Second -null- argument*
+- The second argument of null can also be replaced with an empty ojbect by instead wrapping null with a curly bracket 
+- This object is referred to as the props object and is the main mechanism of sending data from a parent component toa child component in React. Example is shown below:
+
+React.createElement (
+	type, 
+	[props],
+	[...children]
+)
+
+- The inner third argument (children) is what makes it possible to nest elements inside other elements, mimicking the way that HTML works.
+
+
+* NAV Components* 
+- Developers commonly build navigation menus using html on ordered lists. A nav menu si basically just a list which can be styled easily with CSS 
