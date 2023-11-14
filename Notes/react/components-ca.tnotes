@@ -142,3 +142,97 @@ function Sidebar() {
 		</aside>
 	)
 };
+
+*Components as Fuction Expressions*
+
+- Function Declaration as a component in React
+
+function Nav(props) {
+	return (
+		<ul>
+			<li>{props.first}</li>
+		</ul>
+	)
+}
+
+- Function declaration as a function expression:
+
+const Nav = function (props){
+	return (
+		<ul>
+			<li>{props.first}</lil>
+		</ul>
+	)
+}
+
+- The above 2 expressions are similar however it is now using an anonymous (nameless) function by assinging it to a variable using the const keyword. 
+- Changing a component from a function declaration to a function expression doesn't change it's behavior or how the Nav component is rendered.
+
+* Function declaration using arrow functions (=>)*
+
+- Arrow function is a core feature that was released in ES6 and the main benefits is the shorter syntax used. Example below:
+
+cost Nav = (props) => {
+	return(
+		<ul>
+			<li>
+			{props.first}
+			</li>
+		</ul>
+	)
+
+}
+
+- Above example elimates the need to write function while still declaring a const variable
+- The arrow itself can be thought of as the replacement for the function keyword
+- The parameters that this arrow function accepts are listed before the arrow itself
+
+ES5 vs Arrow Function
+
+ES5
+const example = function() {};
+
+ES6
+const example = () => {} // the parameters is before the arrow, thus accepting any arguments before the arrow itself
+
+- Another key point in using arrow functions is that the paranthesis is optional if only a single parameter is accepted. So to simplify, the shorter version to write the above code example would be:
+
+const Nav = props => 
+
+**FOR ANY NUMBER OF PARAMETERS OTHER THAN A SINGLE PARAMETER, USING PARENTHESIS IS COMPULSORY
+ 
+function Nav = () => {} //this example would be used if a component was NOT accepting parameters
+
+*IMPLICIT RETURN*
+- This is used if the entire component is in a single line of code (arrow on the same line) Example:
+
+const Nav = () => <ul><li>Home</li></ul> // no curly braces, return statement, divs or parenths
+
+Example using forEach() array method:
+[10, 20, 30].forEach(item => item * 10)
+
+ES5 Version:
+[10,20,30].forEach(function(item){
+	return item * 10
+	};
+)
+
+// forEach() method accepts a single parameter: an anoynymous function. If you write this anonymous function in ES5 syntax, then it would contain a return statement:
+
+ES5 Version:
+function(item){
+	return item * 10
+}
+
+function calc (num) {
+	return num * 20
+}
+
+ES6 Version: 
+item => item * 10
+
+num => num * 20;
+
+- Both these functions perform the same tasks, however the syntax is different. The ES6 version is much shorter becase:
+1. The arrow function has a single parameter, so paranthese is not required around the item parameter (left of the arrow)
+2. Since the arrow function fits on one line of code, you don't need to use curly braces around the function body or the return keyword as it is IMPLICIT
