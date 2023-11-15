@@ -236,3 +236,19 @@ num => num * 20;
 - Both these functions perform the same tasks, however the syntax is different. The ES6 version is much shorter becase:
 1. The arrow function has a single parameter, so paranthese is not required around the item parameter (left of the arrow)
 2. Since the arrow function fits on one line of code, you don't need to use curly braces around the function body or the return keyword as it is IMPLICIT
+
+* Embedded Expressions*
+- Allows Javascript values to be insereted into HTML of React elements. Example:
+
+function formateName(firstName, surname) {
+	
+	return firstName + " " + surname;
+}
+
+//embedded function outputs
+
+const result = <p> {formateName("Jane", "Wilson")}</p>
+
+*Expressions in HTML attributes*
+const url = "photo.png"
+const result = <img src={url}></img>; // double quotes not need since url is a variable 
