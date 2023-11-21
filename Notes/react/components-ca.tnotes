@@ -252,3 +252,18 @@ const result = <p> {formateName("Jane", "Wilson")}</p>
 *Expressions in HTML attributes*
 const url = "photo.png"
 const result = <img src={url}></img>; // double quotes not need since url is a variable 
+
+let name = 'Bob';
+if (name === 'Bob') {
+		console.log('Hello, Bob')
+} else {
+		console.log('Hello, Friend')
+};
+
+*Ternary Operator*
+
+name === 'Bob' ? "Yes, it is Bob" : "I don't know this person";
+//if name evaluates to 'Bob' then the expression is true.
+//this is also a shorthand version of writing the above if,else statement above 
+
+*Using ternary expressions in JSX* 
