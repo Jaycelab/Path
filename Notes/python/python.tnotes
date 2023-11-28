@@ -154,3 +154,37 @@ while (num <= 10):
 	inc = inc + 1
 	
 print("End of while loop")
+
+*For loop Practice*
+
+range_num = range(0,11,2)
+for i in range_num:
+	print("Range from 10: ", i)
+
+for i in range(0,101,10):
+	print("Range from 100 in multiples of 10: ", i)
+
+print("**********")
+print("End of loop")
+
+*Prime Number Excercise*
+
+num = int(input())
+
+if (num < 1 or num == 1):
+	print(-1)
+elif (num > 1):
+	for i in range(2, num):
+		if (num % i == 0):
+			print("False")
+			break
+		else:
+			print("True")
+			
+else:
+	print("True")
+	
+
+- Break will end the condition and revert to beginning of statement . Skips interation
+- Continue will skip the interation if the condition is True
+- Pass will ignore any errors and continue
