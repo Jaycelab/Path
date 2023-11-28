@@ -1,0 +1,156 @@
+- To apply comments, the hashtag sybol is used. Any text to the right of the symbol is commented out(#)
+- For bulk comments, """example text """ . (two pairs of 3 quotes on left and right)
+- Python does not use curly brackets for executing expressions, instead it uses indentation 
+
+- The first line of python code cannot have indentation
+- Indentation is mandatory in python to define the blocks of statements
+- The number of spaces must be uniform in a block of code
+- It is preferred to use whitespaces instead of tabs to indent in python
+
+*Python order* 
+
+*Tokens*
+Keywords
+Python keywords are special reservered words
+Conveys a special meaning to the compiler/interpreter
+
+
+- Identifier is used to assigna variable.
+
+- Single quotes are usually used for single characters
+- Double quotes are usually used for sentenaces
+- Tripe quotes are mainly used for multilined paragraphs 
+
+*Class Excercises*
+- String Literal
+print("Hello World")
+age=input("Enter your age: ")
+
+print(id(age))
+
+a,b=10,"Thomas"
+print(a)
+print(b)
+
+print(a,b,age)
+
+single='c'
+double="Hello whats up"
+triple="""I'm alright. Just learning python.
+The class is from 6 to 10pm.
+From Mondays-Fridays"""
+
+print(single,double,triple)
+
+- Numberical Literal
+#10,100,200,300
+a=0b1010
+b=100
+c=0o310
+d=0x12c
+
+float_1=10.5
+float_2=1.5e2
+#10.5, 150
+
+x=3.14j
+
+print(a,b,c,d)
+print(float_1, float_2)
+print(x,x.imag,x.real)
+#3.14j, 3.14 0.0
+
+- == equality to check operands 
+
+
+
+
+*Special LIterals*
+- Python contains one special literal ie. **None**
+- WE use it to specify to that field that is not created
+
+- Declaration & Initialization. Both are needed; variables need to be initialized and declared.
+
+*Boolean Literal*
+x=(1==True)
+y=(1==False)
+a=True+ 4
+b=False + 10
+
+print("x is", x)
+print("y is", y)
+print("a:", a)
+print("b:", b)
+
+*Conditional Expression*
+drink="Available"
+food=None
+x=drink
+if x==drink:
+    print(drink)
+else:
+    print(food)
+
+*Operators*
+- Arthimetic Operators
+
+*KM to Miles excercise*
+kilometer = int(input("Kilometer distance: "))
+
+one_mile = 0.621
+
+miles= kilometer * one_mile
+print("The total miles is :",miles)
+
+
+- Float vs division. Float gives a rounded result while division gives a decimal result
+
+
+Breakfast price = B
+Tip = T
+Tax = F
+
+B = int("Price of meal: ")
+T = int("Percentage tip: ")
+F = int("Percentage of tax: ")
+
+weight=int(input())
+
+*Bitwise Operator*
+
+- ^ Symbol (carrot symbol, xor)
+TTF
+FFF
+TFT
+FTT
+
+*Negation operator*
+~
+
+*Shift Operators*
+Right 
+
+- If there are similar operators, standard right direction is used
+
+
+- range()
+
+#range(start,stop,step_size)
+ange_nums=range(1,10,1)
+
+-Step is another way of saying the increment size
+
+
+*While Loop Practice*
+
+num = int(input("Enter number"))
+inc = 1
+
+#create a temp var to hold the value to increment
+while (num <= 10):
+	value = num * inc
+	print("The total is: ".val)
+	#incrementing per each loop
+	inc = inc + 1
+	
+print("End of while loop")
