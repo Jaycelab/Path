@@ -188,3 +188,29 @@ else:
 - Break will end the condition and revert to beginning of statement . Skips interation
 - Continue will skip the interation if the condition is True
 - Pass will ignore any errors and continue
+
+ lis_vals=[]
+ list_marks=[]}
+ 
+ -Length property is used to dynamically check the number of elements in an array
+ Keyword is len.
+ - Count returns the number of occurences of an element 
+ 
+ - Lists is a mutable data type. Able to modify, increase ,decrease etc
+ 
+ - SLice can also be written with colon :
+ 
+ *Slicing Excercise*
+ 
+ #input
+ num = input()
+ new_list = num.split()
+ 
+ new_num = list(map(int, new_list))
+ 
+ first_ len(new_num) // 2
+ print(new_num[:first])
+ print(new_num[first:])
+ 
+ #output
+ #splut one list into 2
