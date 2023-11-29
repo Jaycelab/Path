@@ -1,0 +1,37 @@
+*CONDITIONALS*
+- Conditional execution controls if a certain block of code will be executed or not based upon the truthy/falsy value of a condition
+- Conditionals govern and control the flow of execution of statments based on a set of conditions and the decisions taken thereof.
+- Applications is not a lineere set of sequence, instead it jumps to different hoops to get a results based on a set of factors
+- There are a total of 6 conditional statements in Javascript:
+if-else
+switch
+ternary operator
+logical operators
+nullish coalescing operators
+optional chaining operators
+
+
+*If-else*
+- Implements conditional branching of control based o a simple true or false conditional
+
+if(expression) {
+	//execute if expression is truthy
+} else{
+	//execute if expression is falsy
+}
+
+
+*Switch Statements*
+-  Evaluates an expression and uses the outcome of that expression to match against a set og given conditions known as cases
+- break keyword is used to stop ethe execution and step out of the switch statement
+- default case is executed when no case code is matched 
+
+
+*ARRAYS*
+- Array Prototype . All objects inherit from a parent template known as prototype
+- Protoype defines the methods and properties that should be vailable to all objects of that type.
+- Similar to a prototype from a car. Differents prototypes are used to be perfected, tested, designed etc. Each prototype has different properties that meet requirements per each country but ultimately it is all derived from the initial first prototype
+
+- Accesor Methods: Accesses the array without modifications but returns the new modified array. Eg concat, filter, slice etc
+- Interation Methods: Iterate, process elements and return a new array with the processed elements. It is used to traverse the array and dynamically access elements of that array 
+- Mutator Methods: Modify (mutate) the original array. Eg. push, pop, shift, sort, etc 
