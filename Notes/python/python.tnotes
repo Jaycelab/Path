@@ -214,3 +214,43 @@ else:
  
  #output
  #splut one list into 2
+ 
+ -map() returns a map object, It takes two parameteres(var, iterable)
+ 
+lis_nums =[1,2,3,4,5,6]
+
+#Approach 1
+#using .append
+lis_sq=[]
+for i in lis_nums:
+	lis_sq.append(i**2)
+
+print(list_sq)
+
+#creates a new list and assinging the result by appending lis_nums to lis_sq
+
+#Approach #2
+#Expression apprach
+lis_sq1 =[i**2 for i in lis]
+print(lis_sq1)
+
+- The above is evaulated using lis_new = [expression for i in interable]
+
+lis_even = [i for i in lis_nums if i % 2 == 0]
+
+'''
+for i in lis_numbs:
+	#if (i % 2 ==0):
+		append
+'''		
+
+- Tupple unmutable array
+
+*STRINGS*
+
+strings are a string of characters . Example:
+
+name = "Jason"
+
+for i in name:
+print(i, end = "--")
