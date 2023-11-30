@@ -254,3 +254,57 @@ name = "Jason"
 
 for i in name:
 print(i, end = "--")
+
+print(name[])
+
+*TUPLES*
+- immutable data type and always surrounded by circle brackets rather than square brackets
+- Tuples only have 2 methods. Count and index
+- Mainly used when data is not changed often
+
+*EXAMPLES*
+
+tup_new= ()
+tup_nums = (1,2,3,4,5)
+tup_str = ("aa", "aa", "aa", "dd", "ee")
+tup_flo = (12.3,45.6,45.6)
+
+for i in tup_str:
+	print(i)
+	
+#first element (using both +ve and -ve index)
+print(tup_flo[0])
+print(tup_flo[-(len(tup_flo))])
+
+#last element using both +ve and -ve index
+print(tup_str[len(tup_str)-1])
+print(tup_str[-1])
+
+- For a single element, it will return a string or int. However if more than 1 is added, it is classified as tuple. Once a comma is detected, the type converts to tuple as it is expecting a second element. 
+
+- Single element is treated as a Primitive type
+
+
+tup_1 = (12,23,42,34,32)
+print(tup_1)
+print(type(tup_1))
+
+
+*Tuple Packing*
+
+- If adding different data types to a list, it is automatically packaging into a tuple regardless of circle brackets 
+Example: 
+
+
+data = "My", "age", 23, 34.45
+print(type(data))
+print(data)
+
+*Tuple Unpackaging*
+- deconstructing
+
+a, b, c,d = data
+print(a)
+print(b)
+print(c)
+print(d)
