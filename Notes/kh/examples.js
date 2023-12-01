@@ -76,3 +76,34 @@ switch (item) {
 		throw new Error("Unable to identify item...");
 	}
 }
+
+*Ternary Operator*
+
+const number = 5;
+const result =
+	number * 2 > 5
+	? number === 10
+	? "Number is 5"
+	: "Twice of number is not 10"
+	: "Number is not 5";
+console.log(result);
+//Answer is "Twice of number is 10"
+//This is because Both num * 2 > 5 and number === 10 is both truthy, it will select the second condition.
+
+*Binary Logical Operator*
+'use strict';
+
+let inputUsername = 'joe';
+let inputPassword = 'joe@901';
+
+const database = {
+  joe: {
+    user: 'Joe Mockery',
+    password: 'joe@901',
+  },
+};
+
+let checkPassword = database[inputUsername].password === inputPassword
+
+checkPassword && console.log(`${database[inputUsername].user || 'User'} is logged in...`);
+//evaluates and console.logs if left condition is true
