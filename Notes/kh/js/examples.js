@@ -107,3 +107,33 @@ let checkPassword = database[inputUsername].password === inputPassword
 
 checkPassword && console.log(`${database[inputUsername].user || 'User'} is logged in...`);
 //evaluates and console.logs if left condition is true
+
+*Nullish Coaelescing Operator*
+
+let tempData = [
+	{
+		location: 'Block A - East',
+		sensor1: 0,
+		sensor2: 0,
+		sensor3: 4.2,
+	},
+	{
+		location: 'Block B - East',
+		sensor1: 0,
+		sensor3: 3,
+	},
+];
+
+//example below will select sensor 3 as it evaluates sensor1 & 2 as a falsy value (0)
+console.log(
+	`${tempData[0].location}: ${
+		tempData[0].sensor1 || tempData[0].sensor2 || tempData[0].sesnor3
+	} degrees `
+	); 
+
+//example below will select the first truth value which is sensor 1 
+console.log(
+	`${tempData[1].location}: ${
+		tempData[1].sensor1 ?? tempData[1].sensor2 ?? tempData[1].sesnor3
+	} degrees `
+	); 

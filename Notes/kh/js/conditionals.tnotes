@@ -20,6 +20,11 @@ if(expression) {
 	//execute if expression is falsy
 }
 
+*Nullish Coalescing Operator*
+- ?? is used to evalute an opperand as it's true value rather than a boolean value. Example, 0 will evaluate as integer 0 rather than false.
+- Logical OR returns the first truthy value while nullish coalescing returns the first defined value.
+- null value or unavailable value will skip to the next evaluation
+
 
 *Switch Statements*
 -  Evaluates an expression and uses the outcome of that expression to match against a set og given conditions known as cases
