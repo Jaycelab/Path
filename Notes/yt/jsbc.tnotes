@@ -1,0 +1,5 @@
+- Dot notation && bracket notation using person const as an example.
+person.lastName = "Alvarado" , person.location = ['Orange County', 'Earth']
+
+- delete keyword deletes the element of an object 
+- To add a new property, dot notation can be used following a constant name, key and = operator with the key value. Example, person.isMale = 'True'
