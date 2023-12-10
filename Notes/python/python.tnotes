@@ -308,3 +308,44 @@ print(a)
 print(b)
 print(c)
 print(d)
+
+#slicing is allowed as it does not mutate the original tuple list
+
+tuple_nums = (1,23,4,56,54,65,79,35,46,46)
+sli_tup = tuple_nums[2:5]
+
+print(sli_tup)
+print(type(tuple_nums))
+
+num = int(input())
+num2= int(input())
+
+dic = {}
+dic2 = {}
+
+for i in range(num):
+	k = input()
+	v = input()
+	dic.update({k:v})
+
+for j in range(num2)
+	k = input()
+	v = input()
+	dic2.update({k:v})
+
+dic.update(dic2)
+print(dic)
+
+*FUNCTIONS*
+- defined by keyword = def
+- can be defined or predefined, predetermined . Example below;
+
+*Function Delcartion Example*
+def greet():
+	print("Greet called")
+
+*Function Invocation*
+	greet()
+- Parameters carry data
+
+- Not loaded in memory until it is invoked or called

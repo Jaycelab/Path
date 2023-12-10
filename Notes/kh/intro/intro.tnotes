@@ -15,4 +15,4 @@
 - Python uses the Python Virtual Machine (PVM) to execute bytecode that is generated in a just-in-time compilation step.
 - head of Time compilation refers to the compilation of source-code to an executable before it reaches the end user for use.
 
-Keywords: Specific workds that is part of a programming lanaugae that acts as tokens of instructions put together to form a program
+Keywords: Specific workds that is part of a programming lanaugae that acts as tokens of instructions put together to form the logic of a program. Eg. if, else, var, function let. Some are reserved and cannot be used 

@@ -25,6 +25,11 @@ if(expression) {
 - Logical OR returns the first truthy value while nullish coalescing returns the first defined value.
 - null value or unavailable value will skip to the next evaluation
 
+*Optional Chaining Operator*
+- If an property value is not assigned, a TypeError will occur. An optional chaining operator will return undefined rather than an error. The part on the right will not evaulate
+- This is use for adding a custom message by combining a nullish coalescing to display a console.log message as well
+- This also works with arrays and the index of the element or key/value.
+
 
 *Switch Statements*
 -  Evaluates an expression and uses the outcome of that expression to match against a set og given conditions known as cases
