@@ -1,0 +1,13 @@
+- creating a new date object that inherits its properties from a data prototype
+const day = new Date().getDay();
+
+//Array Protype
+- All objects inherit from a parent template known as a prototype
+- Prototype defines the methods and properties that should be available to all objects of that type.
+
+- Arrays is all part of the Array.prototype, which provides Javascript with many methods that can be used while working with arrays
+
+- There are 3 built in methods for the Array.prototype that can be accessed. They are the following:
+1. Accesor Methods - Acces the array without modifying it
+2. Iteration Methods - Iterate, process elements and return a new array with the processed elements
+3. Mutator Methods - Modify (mutate) the original array
