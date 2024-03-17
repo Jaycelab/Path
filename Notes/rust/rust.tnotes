@@ -1,0 +1,10 @@
+- print!() is used to print to console
+- let keyword is used to declare a variable
+- scope is defined by the blcok of code in which its declared {}
+- function uses the fn keyword
+- shadowing allows variables to be redeclared in the same scope with the same name
+= to fix an undeclared variable, we can append a _ before the variable. eg. let _y: i32
+- variables in Rust is default to immutable. To change , we add the mut keyword before a variable
+- we can initialize a variable without a value or out of scope if placed inside a {} bracket 
+- when using a {}, we can use the variables after the sentence as arguments. Example:
+        println!("The value fo x is {} and value of y is {}", x, y); // x, y as arguments

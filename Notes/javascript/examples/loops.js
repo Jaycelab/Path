@@ -15,3 +15,5 @@ let rangeSum = function (number) {
   }
   return sum;
 };
+
+console.log(rangeSum(1));

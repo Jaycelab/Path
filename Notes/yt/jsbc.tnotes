@@ -17,7 +17,7 @@ person.lastName = "Alvarado" , person.location = ['Orange County', 'Earth']
 
 - Declaration vs expression. Expression is assigning a function to a variable first . Declaration can be called outside the scope or before the function , however an expression will give an error if calling the function before
 - Callback function is calling a function and using another function as an argument of a function.
-You can either create a new callback function and pass it as an argument using the function name. OR you can add the entire callback as an argument when calling the function
+You can either create a new callback function and pass it as an argument using the function name. OR you can add the entire callback as an argument when calling the functioncdc
 
 *JSON*
 - JSON.stringify will return an object into a json file
@@ -31,11 +31,35 @@ You can either create a new callback function and pass it as an argument using t
 const currentDate = new Date(2023, 12, 10, 12, 34, 23, 0):
 console.log(currentDate)
 
-//Year and Month
+
 const date = new Date();
 
 const year = date.getFullYear();
 const month = date.getMonth();
+const day = date.getDay();
+const hour = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
+const milliseconds = date.getMilliseconds();
 
 console.log(`The year is ${year}`)
 console.log(`The month is ${month}`)
+console.log(`The day is ${day}`)
+console.log(`The hour is ${hour}`)
+console.log(`The minute is ${minutes}`)
+console.log(`The second is ${seconds}`)
+console.log(`The millisecond is ${milliseconds}`)
+
+//Different date formats 
+const date = new Date()
+console.log(date.toDateString())
+console.log(date.toISOString)
+console.log(date.toLocalString())
+
+//Date to String. Prints date to a string format
+
+const date = new Date();
+
+console.log(date.toDateString()); // Tue Aug 01 2023
+console.log(date.toISOString()); // 2023-08-01T20:55:01.154z
+console.log(date.toLocalString()); // 08/01/2023 1:55:01 PM
