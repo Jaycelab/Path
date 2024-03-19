@@ -45,3 +45,23 @@ return (
 
 Styling CSS inline in React requires an object . The object{} is wrapped inside another set of {}. Example: 
  style={{color: "red"}}. (Note, since this is JSX, the color "red" is wrapped in quotes )
+ 
+ - you can assign variables before the return statement and create objects as well. When calling an object, you pass the object name as the parameter on the function and call inside the variable block as an argument. Example
+function App () {
+	const user = {
+	firstName: "Jason",
+	lastName: "Alvarado"
+	}
+	
+	const fullName = (user) => {
+	} return `${firstName} ${lastName}`
+};
+
+	return (
+	<>
+		<h1>{fullName(user)}!<h1/>
+	</>
+	)
+}
+
+-- if statements can only be used outside the return statement, however using teneary satements is possible 
